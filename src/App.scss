@@ -1,0 +1,248 @@
+//COLOR MODS
+$Spot: rgb(221, 252, 223);
+$SpotDark: rgb(221, 252, 223);
+$Green: #002800;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+  color: $Spot;
+
+  &::selection {
+    background: $Spot;
+  }
+}
+
+html {
+  background-image: url(./assets/img/Background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  padding-top: 2vw;
+  z-index: 9999999;
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5vw;
+
+    article {
+      display: flex;
+      gap: 2vw;
+      text-transform: uppercase;
+
+      span {
+        position: relative;
+        a {
+          font-size: 1vw;
+          position: relative;
+          mix-blend-mode: difference;
+
+          
+          
+          &:hover + .Hand, &.Active + .Hand {
+            top: -65%;
+            animation: Shake 1s 0.2s ease-in-out infinite alternate;
+          }
+
+        }
+        .Hand {
+          content: url("./assets/img/deco/Hand.svg");
+          width: 1vw;
+          position: absolute;
+          top: -150%;
+          left: 50%;
+          transform: translate(-50%);
+          transition: 0.1s ease-in-out;
+        }
+        @keyframes Shake {
+          from {
+            transform: translate(-50%, 0px);
+          }
+    
+          to {
+            transform: translate(-50%, 3px);
+          }
+        }
+    
+      }
+    }
+  }
+  .st0 {
+    fill: $Spot;
+    mix-blend-mode: difference;
+  }
+  .st1 {
+    fill: #070300;
+  }
+  .st4 {
+    fill: #1e301e;
+  }
+  .st5 {
+    fill: $Spot;
+    mix-blend-mode: difference;
+  }
+  .st9 {
+    path {
+      fill: $SpotDark;
+      mix-blend-mode: difference;
+    }
+  }
+
+  #Logo {
+    width: 10vw;
+  }
+  #Title {
+    width: 12vw;
+  }
+}
+
+h5 {
+  font-size: 5vw;
+  text-align: center;
+  line-height: 8;
+  color: black;
+}
+
+#Home {
+  #Galaxy {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    overflow: hidden;
+    z-index: -1;
+
+    img {
+      position: absolute;
+      border-radius: 50%;
+      width: 26vw;
+      height: 26vw;
+    }
+
+    svg {
+      .st0 {
+        fill: #1e301e;
+      }
+      .st1 {
+        fill: #273d27;
+      }
+      .st2 {
+        fill: #324c32;
+      }
+      .st3 {
+        fill: #405c41;
+      }
+      .st4 {
+        fill: #3f5c40;
+      }
+
+      scale: 110%;
+      z-index: -1;
+
+      #GroupGroupEarth3 {
+        animation: Spin 40s infinite linear;
+        transform-origin: center;
+      }
+
+      #GroupEarth3 {
+        animation: Spin 10s infinite linear;
+        transform-origin: center;
+        transform-box: fill-box;
+      }
+
+      #Ring1 {
+        animation: SpinR 30s infinite linear;
+        transform-origin: center;
+        transform-box: fill-box;
+      }
+
+      #Ring2 {
+        animation: Spin 30s infinite linear;
+        transform-origin: center;
+        transform-box: fill-box;
+      }
+
+      #Ring3 {
+        animation: SpinR 30s infinite linear;
+        transform-origin: center;
+        transform-box: fill-box;
+      }
+
+      #Ring4 {
+        animation: Spin 30s infinite linear;
+        transform-origin: center;
+        transform-box: fill-box;
+      }
+
+      #Ring5 {
+        animation: SpinR 30s infinite linear;
+        transform-origin: center;
+        transform-box: fill-box;
+      }
+
+      #Ring6 {
+        animation: Spin 30s infinite linear;
+        transform-origin: center;
+        transform-box: fill-box;
+      }
+
+      #GroupEarth2 {
+        animation: Spin 40s infinite linear;
+        transform-origin: center;
+      }
+
+      #GroupPluto1 {
+        animation: Spin 30s infinite linear;
+        transform-origin: center;
+      }
+
+      #GroupPluto2 {
+        animation: Spin 30s infinite linear;
+        transform-origin: center;
+      }
+
+      #DarkHole1 {
+        animation: SpinR 30s infinite linear;
+        transform-origin: center;
+      }
+
+      #DarkHole2 {
+        animation: SpinR 30s infinite linear;
+        transform-origin: center;
+      }
+    }
+
+    @keyframes Spin {
+      from {
+        transform: rotateZ(0deg);
+      }
+
+      to {
+        transform: rotateZ(360deg);
+      }
+    }
+
+    @keyframes SpinR {
+      from {
+        transform: rotateZ(0deg);
+      }
+
+      to {
+        transform: rotateZ(-360deg);
+      }
+    }
+  }
+}
