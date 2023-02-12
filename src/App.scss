@@ -56,8 +56,7 @@ header {
         mix-blend-mode: difference;
       }
     }
-  
-    }
+  }
   nav {
     width: 100%;
     display: flex;
@@ -75,6 +74,7 @@ header {
           font-size: 1vw;
           position: relative;
           mix-blend-mode: difference;
+          cursor: pointer;
 
           &:hover + .Hand,
           &.Active + .Hand {
@@ -122,14 +122,16 @@ header {
     path {
       fill: black;
       mix-blend-mode: normal;
-      }
+    }
   }
 
   #Logo {
     width: 10vw;
+    cursor: pointer;
   }
   #Title {
     width: 12vw;
+    cursor: pointer;
   }
 }
 
@@ -172,7 +174,7 @@ h5 {
       outline: 4px solid $Green;
       outline-offset: -5px;
       margin: -17% 0 0 20%;
-      cursor: pointer;
+      cursor: pointer;	
       transition: 0.1s;
       z-index: 2;
 
@@ -437,7 +439,7 @@ h5 {
     }
   }
 }
-#Contact{
+#Contact {
   #Galaxy {
     position: absolute;
     display: flex;
@@ -568,5 +570,79 @@ h5 {
       }
     }
   }
+  main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0vw;
+    z-index: -1;
 
+    h1 {
+      color: $Green;
+      position: absolute;
+      font-size: 10vw;
+      text-transform: uppercase;
+      top: 4vw;
+    }
+
+    form {
+      background-color: $Green;
+      width: 30vw;
+      height: 30vw;
+      border-radius: 50%;
+      display: flex;
+      gap: 1vw;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      div:nth-child(1) {
+        display: flex;
+        gap: 1vw;
+      }
+
+      div {
+        input {
+          padding: 0.5vw;
+          border-radius: 0.5vw;
+          width: 8vw;
+
+          color: $Bread;
+          font-size: 0.5vw;
+          font-weight: bold;
+          &::placeholder {
+            text-transform: uppercase;
+            font-size: 0.5vw;
+            color: $Bread;
+            font-weight: normal;
+          }
+
+          &.Mail {
+            width: 17vw;
+          }
+        }
+        textarea {
+          padding: 0.5vw;
+          border-radius: 0.5vw;
+          width: 17vw;
+          height: 5vw;
+          resize: none;
+
+          color: $Bread;
+          font-size: 0.5vw;
+          font-weight: bold;
+
+          &::placeholder {
+            text-transform: uppercase;
+            font-size: 0.5vw;
+            color: $Bread;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
 }
