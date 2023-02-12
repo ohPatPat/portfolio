@@ -437,3 +437,136 @@ h5 {
     }
   }
 }
+#Contact{
+  #Galaxy {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    overflow: hidden;
+    z-index: -1;
+
+    img {
+      display: none;
+    }
+    #CvBtt {
+      display: none;
+    }
+
+    svg {
+      .st0 {
+        fill: #3f5c40;
+        opacity: 10%;
+      }
+      .st1 {
+        fill: #3f5c40;
+        opacity: 30%;
+      }
+      .st2 {
+        fill: #3f5c40;
+        opacity: 60%;
+      }
+      .st3 {
+        fill: #3f5c40;
+        opacity: 80%;
+      }
+      .st4 {
+        fill: #3f5c40;
+        opacity: 100%;
+      }
+
+      scale: 145%;
+      z-index: -1;
+
+      #GroupGroupEarth3 {
+        display: none;
+      }
+
+      #GroupEarth3 {
+        display: none;
+      }
+
+      #Ring1 {
+        animation: SpinR 30s infinite linear;
+        transform-origin: center;
+        transform-box: fill-box;
+      }
+
+      #Ring2 {
+        animation: Spin 30s infinite linear;
+        transform-origin: center;
+        transform-box: fill-box;
+      }
+
+      #Ring3 {
+        animation: SpinR 30s infinite linear;
+        transform-origin: center;
+        transform-box: fill-box;
+      }
+
+      #Ring4 {
+        animation: Spin 30s infinite linear;
+        transform-origin: center;
+        transform-box: fill-box;
+      }
+
+      #Ring5 {
+        animation: SpinR 30s infinite linear;
+        transform-origin: center;
+        transform-box: fill-box;
+      }
+
+      #Ring6 {
+        display: none;
+      }
+
+      #GroupEarth2 {
+        display: none;
+      }
+
+      #GroupPluto1 {
+        animation: Spin 30s infinite linear;
+        transform-origin: center;
+      }
+
+      #GroupPluto2 {
+        animation: Spin 30s infinite linear;
+        transform-origin: center;
+      }
+
+      #DarkHole1 {
+        animation: SpinR 30s infinite linear;
+        transform-origin: center;
+      }
+
+      #DarkHole2 {
+        animation: SpinR 30s infinite linear;
+        transform-origin: center;
+      }
+    }
+
+    @keyframes Spin {
+      from {
+        transform: rotateZ(0deg);
+      }
+
+      to {
+        transform: rotateZ(360deg);
+      }
+    }
+
+    @keyframes SpinR {
+      from {
+        transform: rotateZ(0deg);
+      }
+
+      to {
+        transform: rotateZ(-360deg);
+      }
+    }
+  }
+
+}

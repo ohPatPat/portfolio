@@ -259,7 +259,7 @@ export const Header = () => {
               className={({ isActive }) => (isActive ? "Active" : "")}
               to="/portfolio"
             >
-              Projekter
+              Portfolio
             </NavLink>
             <div className="Hand" />
           </span>

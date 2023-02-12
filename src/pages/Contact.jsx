@@ -1,3 +1,4 @@
+import { Galaxy } from "../comp/galaxy/Galaxy.jsx";
 import { MetaTags } from "../comp/MetaTags.jsx";
 
 
@@ -7,7 +8,10 @@ export const Contact = (props) => {
 
         <section id="Contact">
       <MetaTags title={props.title}></MetaTags>
-      <h5>{props.title}</h5>
+
+      <main>
+        <Galaxy/>
+      </main>
 
 
 
