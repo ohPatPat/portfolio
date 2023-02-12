@@ -1,7 +1,8 @@
 //COLOR MODS
 $Spot: rgb(221, 252, 223);
 $SpotDark: rgb(221, 252, 223);
-$Green: #002800;
+$Green: #3f5c40;
+$Bread:rgb(109, 102, 102);
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +12,7 @@ $Green: #002800;
   font-family: "Roboto", sans-serif;
   outline: none;
   color: $Spot;
+  font-family: open sans;
 
   &::selection {
     background: $Spot;
@@ -22,6 +24,10 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 header {
@@ -47,13 +53,11 @@ header {
           position: relative;
           mix-blend-mode: difference;
 
-          
-          
-          &:hover + .Hand, &.Active + .Hand {
+          &:hover + .Hand,
+          &.Active + .Hand {
             top: -65%;
             animation: Shake 1s 0.2s ease-in-out infinite alternate;
           }
-
         }
         .Hand {
           content: url("./assets/img/deco/Hand.svg");
@@ -68,12 +72,11 @@ header {
           from {
             transform: translate(-50%, 0px);
           }
-    
+
           to {
             transform: translate(-50%, 3px);
           }
         }
-    
       }
     }
   }
@@ -130,6 +133,38 @@ h5 {
       border-radius: 50%;
       width: 26vw;
       height: 26vw;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    #CvBtt {
+      position: absolute;
+      width: 4vw;
+      height: 4vw;
+      font-size: 1.2vw;
+      border-radius: 50%;
+      background-color: $Green;
+      border: none;
+      outline: 4px solid $Green;
+      outline-offset: -5px;
+      margin: -17% 0 0 20%;
+      cursor: pointer;
+      transition: 0.1s;
+      z-index: 2;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        background-color: #324c32;
+        outline: 5px solid #324c32;
+        outline-offset: 5px;
+      }
+      p {
+        padding-top: 5px;
+        position: absolute;
+      }
     }
 
     svg {
@@ -242,6 +277,139 @@ h5 {
 
       to {
         transform: rotateZ(-360deg);
+      }
+    }
+  }
+}
+
+#About {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+
+  h2 {
+    text-transform: uppercase;
+    padding-top: 2vw;
+    font-size: 1vw;
+    color: rgba(128, 128, 128, 0.357);
+
+    .AboutTitle {
+      color: rgba(128, 128, 128, 0.357);
+
+      .false {
+        color: rgba(128, 128, 128, 0.357);
+      }
+      .DayHighlight {
+        color: black;
+      }
+    }
+  }
+  hr {
+    width: 2.5vw;
+    border-top: solid 0.2vw $Green;
+
+    &.MorningTime {
+      margin-left: 0vw;
+    }
+    &.DayTime {
+      margin-left: 7.3vw;
+    }
+    &.EveningTime {
+      margin-left: 13.8vw;
+    }
+  }
+
+  main {
+    background-color: rgba(255, 255, 255, 0.854);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 50vw;
+    padding: 3vw 4vw;
+    border-radius: 1vw;
+
+    .FlexWrapper {
+      display: flex;
+      gap: 2vw;
+    }
+    h1 {
+      font-size: 2vw;
+      text-align: center;
+      color: rgba(128, 128, 128, 0.357);
+    }
+    p {
+      color: $Bread;
+      padding-top: 1vw;
+      font-size: 0.8vw;
+
+      #WaveHand {
+        font-size: 1vw;
+      }
+
+      &:nth-child(4) {
+        padding-top: 0vw;
+      }
+    }
+
+    #CV {
+        ul {
+          width: 11vw;
+          padding-top: 0.1vw;
+
+          li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 0.5vw;
+            font-size: 0.8vw;
+            color: $Bread;
+
+            img {
+              width: 1vw;
+
+              &.Shadow {
+                box-shadow: rgba(0, 0, 0, 0.334) 0px 1px 4px;
+              }
+            }
+          }
+          &.NoFlex {
+            li {
+              display: block;
+              .Bold {
+                color: $Bread;
+                font-weight: bold;
+              }
+              .Small {
+                color: $Bread;
+                font-size: 0.7vw;
+              }
+            }
+          }
+        }
+      
+    }
+    #Skills{
+      h2{
+        text-align: center;
+      }
+      hr{
+        margin: auto;
+      }
+      ul{
+        padding-top: 1vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5vw;
+        li{
+          background-color: $Green;
+          color: white;
+          font-size: 0.7vw;
+          text-transform: uppercase;
+          font-weight: bold;
+          padding: 0.3vw 0.5vw;
+          border-radius: 1vw;
+        }
       }
     }
   }
