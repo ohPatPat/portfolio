@@ -2,7 +2,7 @@
 $Spot: rgb(221, 252, 223);
 $SpotDark: rgb(221, 252, 223);
 $Green: #3f5c40;
-$Bread:rgb(109, 102, 102);
+$Bread: rgb(109, 102, 102);
 * {
   margin: 0;
   padding: 0;
@@ -35,6 +35,29 @@ header {
   display: flex;
   padding-top: 2vw;
   z-index: 9999999;
+  &.true {
+    .st0 {
+      fill: $Spot;
+      mix-blend-mode: difference;
+    }
+    .st1 {
+      fill: #1e301e;
+    }
+    .st4 {
+      fill: #1e301e;
+    }
+    .st5 {
+      fill: $Spot;
+      mix-blend-mode: difference;
+    }
+    .st9 {
+      path {
+        fill: $SpotDark;
+        mix-blend-mode: difference;
+      }
+    }
+  
+    }
   nav {
     width: 100%;
     display: flex;
@@ -81,24 +104,25 @@ header {
     }
   }
   .st0 {
-    fill: $Spot;
-    mix-blend-mode: difference;
+    fill: $Green;
+    mix-blend-mode: normal;
   }
   .st1 {
-    fill: #070300;
+    fill: black;
+    mix-blend-mode: normal;
   }
   .st4 {
-    fill: #1e301e;
+    fill: $Green;
   }
   .st5 {
-    fill: $Spot;
-    mix-blend-mode: difference;
+    fill: black;
+    mix-blend-mode: normal;
   }
   .st9 {
     path {
-      fill: $SpotDark;
-      mix-blend-mode: difference;
-    }
+      fill: black;
+      mix-blend-mode: normal;
+      }
   }
 
   #Logo {
@@ -352,56 +376,55 @@ h5 {
     }
 
     #CV {
-        ul {
-          width: 11vw;
-          padding-top: 0.1vw;
+      ul {
+        width: 11vw;
+        padding-top: 0.1vw;
 
-          li {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 0.5vw;
-            font-size: 0.8vw;
-            color: $Bread;
+        li {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-top: 0.5vw;
+          font-size: 0.8vw;
+          color: $Bread;
 
-            img {
-              width: 1vw;
+          img {
+            width: 1vw;
 
-              &.Shadow {
-                box-shadow: rgba(0, 0, 0, 0.334) 0px 1px 4px;
-              }
-            }
-          }
-          &.NoFlex {
-            li {
-              display: block;
-              .Bold {
-                color: $Bread;
-                font-weight: bold;
-              }
-              .Small {
-                color: $Bread;
-                font-size: 0.7vw;
-              }
+            &.Shadow {
+              box-shadow: rgba(0, 0, 0, 0.334) 0px 1px 4px;
             }
           }
         }
-      
+        &.NoFlex {
+          li {
+            display: block;
+            .Bold {
+              color: $Bread;
+              font-weight: bold;
+            }
+            .Small {
+              color: $Bread;
+              font-size: 0.7vw;
+            }
+          }
+        }
+      }
     }
-    #Skills{
-      h2{
+    #Skills {
+      h2 {
         text-align: center;
       }
-      hr{
+      hr {
         margin: auto;
       }
-      ul{
+      ul {
         padding-top: 1vw;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 0.5vw;
-        li{
+        li {
           background-color: $Green;
           color: white;
           font-size: 0.7vw;

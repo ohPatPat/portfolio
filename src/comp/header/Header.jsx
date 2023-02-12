@@ -8,14 +8,27 @@ import {
 import "../../App.scss";
 import Logo from "../../assets/img/Logo_2020_Pink.png";
 import Title from "../../assets/img/Title.png";
+import React, { useState } from "react";
 
 export const Header = () => {
+  let [currentPage, setCurrentPage] = useState("");
+
+  React.useEffect(() => {
+    // You can set the currentPage state based on the current page
+    setCurrentPage(window.location.pathname);
+  }, []);
+
+  const handleClick = () => {
+    setCurrentPage(window.location.pathname);
+  };
+
   return (
-    <header>
+    <header onClick={handleClick} className={`${currentPage == "/" ? "true" : "false"}`}>
       <nav>
         <NavLink to="/">
           <svg
             id="Title"
+            // className={currentPage === 'Home' ? 'home-page' : 'other-page'}
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -242,19 +255,31 @@ export const Header = () => {
         </NavLink>
         <article>
           <span>
-            <NavLink className={({ isActive }) =>
-              isActive ? 'Active' : ''} to="/portfolio">Projekter</NavLink>
+            <NavLink
+              className={({ isActive }) => (isActive ? "Active" : "")}
+              to="/portfolio"
+            >
+              Projekter
+            </NavLink>
             <div className="Hand" />
           </span>
           <span>
-            <NavLink className={({ isActive }) =>
-              isActive ? 'Active' : ''} to="/about">Om mig</NavLink>
+            <NavLink
+              className={({ isActive }) => (isActive ? "Active" : "")}
+              to="/about"
+            >
+              Om mig
+            </NavLink>
             <div className="Hand" />
           </span>
 
           <span>
-            <NavLink className={({ isActive }) =>
-              isActive ? 'Active' : ''} to="/contact">Kontakt</NavLink>
+            <NavLink
+              className={({ isActive }) => (isActive ? "Active" : "")}
+              to="/contact"
+            >
+              Kontakt
+            </NavLink>
             <div className="Hand" />
           </span>
         </article>

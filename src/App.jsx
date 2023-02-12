@@ -28,7 +28,7 @@ function App() {
       <Router>
       <Header />
         <Routes>
-          <Route index element={<Home title={"Patrik Dahl | Portfolio"} />} />
+          <Route index element={<Home title={"Patrik Dahl | Portfolio"} currentPage={"Home"}  />}  />
           <Route path="/portfolio" element={<Portfolio title={"Patrik Dahl  | Portfolio"} />} />
           <Route path="/about" element={<About title={"Patrik Dahl  | About me page"} />} />
           <Route path="/contact" element={<Contact title={"Patrik Dahl  | Contact page"} />} />
