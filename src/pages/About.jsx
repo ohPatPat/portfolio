@@ -60,9 +60,9 @@ export const About = (props) => {
               enhver team.
             </p>
             <p>
-              Jeg er uddanet mediegrafiker og webudvikler på Techcollege Aalborg
-              (6 år i alt), hvor jeg forfinerede mine færdigheder i grafiske
-              programmer fx. som Adobe Photoshop, Indesign og (min yndlings)
+              Jeg er uddanet mediegrafiker og webudvikler på Techcollege Aalborg {}
+              <i>(6 år i alt)</i>, hvor jeg forfinerede mine færdigheder i grafiske
+              programmer fx. som Adobe Photoshop, Indesign og {} <i>(min yndlings)</i> {}
               Adobe Illustrator. Har også opnåed en grundig forståelse af
               designprincipper, farveteori og typografi. Under mit ophold på
               Techcollege fik jeg grundigt kendskab til en bred vifte af design

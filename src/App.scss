@@ -376,7 +376,8 @@ h5 {
       text-align: center;
       color: rgba(128, 128, 128, 0.357);
     }
-    p {
+    p,
+    i {
       color: $Bread;
       padding-top: 1vw;
       font-size: 0.8vw;
@@ -594,12 +595,10 @@ h5 {
     z-index: -1;
 
     #Card {
-
       background-image: url(./assets/img/BackgroundLight.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-attachment: fixed;
-
 
       width: 30vw;
       height: 30vw;
@@ -614,8 +613,6 @@ h5 {
     }
 
     #FrontSide {
-
-      
       position: absolute;
       width: 100%;
       height: 100%;
@@ -665,7 +662,8 @@ h5 {
         align-items: center;
         justify-content: start;
 
-        p {
+        p,
+        i {
           width: 20vw;
           font-size: 0.8vw;
           text-align: center;
@@ -691,11 +689,11 @@ h5 {
         }
         @keyframes ShakeSMall {
           from {
-            transform: translateY( 0px);
+            transform: translateY(0px);
           }
 
           to {
-            transform: translateY( 3px);
+            transform: translateY(3px);
           }
         }
       }
@@ -774,7 +772,6 @@ h5 {
         }
       }
 
-
       .FlipButton {
         position: absolute;
         bottom: 0;
@@ -815,7 +812,20 @@ h5 {
         gap: 0.5vw;
       }
 
-      div {
+      .InputWrapper,
+      .InputWrapperError,
+      .TextareaError {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+        &.InputWrapperError,
+        &.TextareaError {
+          input,
+          textarea {
+            border: solid 2px red;
+          }
+        }
         input {
           padding: 0.5vw;
           border-radius: 0.5vw;
@@ -877,6 +887,20 @@ h5 {
           -moz-appearance: textfield;
         }
       }
+
+      span {
+        top: 2.3vw;
+        position: absolute;
+        color: red;
+        font-size: 0.6vw;
+        font-weight: 600;
+      }
+      .TextareaError {
+        span {
+          top: 5vw;
+        }
+      }
+
       button {
         padding: 0.5vw;
         border-radius: 0.5vw;
@@ -901,6 +925,35 @@ h5 {
           outline-offset: 5px;
         }
       }
+      #Show {
+        position: absolute;
+        font-size: 10vw;
+        animation: PopUp 2s 1s ease-in-out backwards infinite;
+        @keyframes PopUp {
+          0% {
+            top: 28vw;
+            transform: rotateZ(0deg);
+          }
+
+          15% {
+            transform: rotateZ(0deg) scale(110%);
+          }
+
+          50% {
+            top: 7vw;
+            transform: rotateZ(-30deg) scale(110%);
+          }
+
+          100% {
+            top: 28vw;
+            transform: rotateZ(0deg);
+          }
+        }
+      }
+      #noShow {
+        display: none;
+      }
     }
   }
 }
+

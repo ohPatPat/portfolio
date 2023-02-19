@@ -6,13 +6,30 @@ import FlipIcon from "../assets/img/icons/FlipArrows.svg";
 import Mail from "../assets/img/icons/InfoIcons_Mail.svg";
 import Phone from "../assets/img/icons/InfoIcons_Phone.svg";
 import HandPoint from "../assets/img/deco/ArrowHandSmall.svg";
+import { useForm } from "react-hook-form";
 
 export const Contact = (props) => {
   const form = useRef();
+  const {
+    register,
+    handleSubmit,
+    clearErrors,
+    formState: { errors, isSubmitSuccessful },
+  } = useForm();
+  const [submitMessage, setSubmitMessage] = useState(null);
+
+  const [Error, setError] = useState("");
+  const clearFields = (e) => {
+    if (Error || errors) {
+      setError();
+      clearErrors();
+      setSubmitMessage(null);
+      console.log("reset");
+    }
+  };
 
   const sendEmail = (e) => {
-    e.preventDefault();
-
+    //e.preventDefault();
     emailjs
       .sendForm(
         "service_zltc55m",
@@ -20,14 +37,18 @@ export const Contact = (props) => {
         form.current,
         "PWAaqSbEwQXEo4NqD"
       )
+
       .then(
         (result) => {
           console.log(result.text);
+          setSubmitMessage(true);
         },
         (error) => {
-          console.log(error.text);
+          console.log("fail");
+          setError("Kunne ikke sende!");
         }
       );
+    document.getElementById("Form").reset();
   };
   const Flip = "Flip";
   const NoFlip = "NoFlip";
@@ -44,6 +65,10 @@ export const Contact = (props) => {
       localStorage.setItem("SideState", NoFlip);
     }
   };
+
+
+  
+
   return (
     <section id="Contact">
       <MetaTags title={props.title}></MetaTags>
@@ -76,8 +101,9 @@ export const Contact = (props) => {
               </ul>
               <p>
                 Så vil jeg meget gerne høre fra jer! <br /> I kan kontakte mig
-                via min email, Tlf. Eller en direkte besked via min hjemmeside
-                (til min email). <br /> <br />  FLIP!
+                via min email, Tlf. Eller en direkte besked via min hjemmeside{" "}
+                {}
+                <i>(til min email)</i>. <br /> <br /> FLIP!
               </p>
               <img src={HandPoint} alt="" />
             </article>
@@ -86,7 +112,7 @@ export const Contact = (props) => {
             </button>
           </section>
           <section id="BackSide">
-          <h1>- kontakt -</h1>
+            <h1>- kontakt -</h1>
             <ul className="Kontakt">
               <li>
                 {" "}
@@ -98,52 +124,122 @@ export const Contact = (props) => {
               </li>
             </ul>
 
-            <form ref={form} onSubmit={sendEmail}>
+            <form id="Form" ref={form} onSubmit={handleSubmit(sendEmail)}>
               <div>
-                <div>
+                <div
+                  className={
+                    Error || errors.companyName
+                      ? "InputWrapperError"
+                      : "InputWrapper"
+                  }
+                >
                   <input
+                    onClick={clearFields}
                     type="text"
-                    name="company_name"
+                    name="companyName"
                     placeholder="Firma navn:"
                     autoComplete="off"
                   />
                 </div>
-                <div>
+                <div
+                  className={
+                    Error || errors.userName
+                      ? "InputWrapperError"
+                      : "InputWrapper"
+                  }
+                >
                   <input
+                    onClick={clearFields}
                     type="text"
-                    name="user_name"
-                    placeholder="navn:"
+                    name="userName"
+                    placeholder="navn:*"
                     autoComplete="off"
+                    {...register("userName", {
+                      required: true,
+                      pattern: /^[A-Za-z]+$/i,
+                      min: 2,
+                    })}
                   />
+                  {errors.userName?.type === "required" && (
+                    <span>Du skal udfylde dit navn!</span>
+                  )}
+                  {errors.userName?.type === "pattern" && (
+                    <span>Kun brug bogstaver!</span>
+                  )}
                 </div>
               </div>
               <div>
-                <div>
+                <div
+                  className={
+                    Error || errors.userEmail
+                      ? "InputWrapperError"
+                      : "InputWrapper"
+                  }
+                >
                   <input
+                    onClick={clearFields}
                     type="email"
-                    name="user_email"
-                    placeholder="Email:"
+                    name="userEmail"
+                    placeholder="Email:*"
                     autoComplete="off"
+                    {...register("userEmail", {
+                      required: false,
+                      pattern: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/i,
+                      min: 2,
+                    })}
                   />
+                  {errors.userEmail?.type === "required" && (
+                    <span>Du skal skriv en email!</span>
+                  )}
+                  {errors.userEmail?.type === "pattern" && (
+                    <span>Udfyld Email korrekt! </span>
+                  )}
                 </div>
 
-                <div>
+                <div
+                  className={
+                    Error || errors.userPhone
+                      ? "InputWrapperError"
+                      : "InputWrapper"
+                  }
+                >
                   <input
+                    onClick={clearFields}
                     type="number"
-                    name="user_phone"
+                    name="userPhone"
                     placeholder="Tlf:"
                     autoComplete="off"
                   />
                 </div>
               </div>
-              <div>
+              <div
+                className={
+                  Error || errors.userMessage ? "TextareaError" : "InputWrapper"
+                }
+              >
                 <textarea
-                  name="message"
-                  placeholder="Besked:"
+                  onClick={clearFields}
+                  name="userMessage"
+                  placeholder="Besked:*"
                   autoComplete="off"
+                  {...register("userMessage", {
+                    required: true,
+                    min: 2,
+                  })}
                 />
+                {errors.userMessage?.type === "required" && (
+                  <span>Du skal skriv en besked!</span>
+                )}
               </div>
-              <button type="submit">Send</button>
+              <button
+                data-type="emoji"
+                id="Submit"
+                onClick={clearFields}
+                type="submit"
+              >
+                Send
+              </button>
+              <p id={isSubmitSuccessful ? "Show" : "noShow"}>👍</p>
             </form>
             <button className="FlipButton" onClick={handleClick}>
               <img src={FlipIcon} alt="Flip icon" />
