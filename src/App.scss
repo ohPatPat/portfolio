@@ -2,6 +2,7 @@
 $Spot: rgb(221, 252, 223);
 $SpotDark: rgb(221, 252, 223);
 $Green: #3f5c40;
+$DarkGreen: #1e301e;
 $Bread: rgb(109, 102, 102);
 * {
   margin: 0;
@@ -93,11 +94,11 @@ header {
         }
         @keyframes Shake {
           from {
-            transform: translate(-50%, 0px);
+            transform: translateY(-50%, 0px);
           }
 
           to {
-            transform: translate(-50%, 3px);
+            transform: translateY(-50%, 3px);
           }
         }
       }
@@ -174,7 +175,7 @@ h5 {
       outline: 4px solid $Green;
       outline-offset: -5px;
       margin: -17% 0 0 20%;
-      cursor: pointer;	
+      cursor: pointer;
       transition: 0.1s;
       z-index: 2;
 
@@ -183,8 +184,8 @@ h5 {
       align-items: center;
 
       &:hover {
-        background-color: #324c32;
-        outline: 5px solid #324c32;
+        background-color: $DarkGreen;
+        outline: 5px solid $DarkGreen;
         outline-offset: 5px;
       }
       p {
@@ -314,6 +315,18 @@ h5 {
   justify-content: center;
   padding-top: 5vw;
   padding-bottom: 5vw;
+  position: relative;
+  animation: FadeIn 0.5s backwards;
+
+  @keyframes FadeIn {
+    from {
+      top: 3vw;
+    }
+
+    to {
+      top: 0vw;
+    }
+  }
 
   h2 {
     text-transform: uppercase;
@@ -580,67 +593,312 @@ h5 {
     top: 0vw;
     z-index: -1;
 
-    h1 {
-      color: $Green;
-      position: absolute;
-      font-size: 10vw;
-      text-transform: uppercase;
-      top: 4vw;
-    }
+    #Card {
 
-    form {
-      background-color: $Green;
+      background-image: url(./assets/img/BackgroundLight.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+
+
       width: 30vw;
       height: 30vw;
       border-radius: 50%;
+      background-color: $Green;
+      transform-style: preserve-3d;
+      transition: all 1s ease;
+      z-index: 2;
+      &.Flip {
+        transform: rotateY(180deg);
+      }
+    }
+
+    #FrontSide {
+
+      
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      backface-visibility: hidden;
+      overflow: hidden;
+
+      h1 {
+        position: absolute;
+        top: 2.5vw;
+        text-align: center;
+        color: white;
+        opacity: 50%;
+        font-size: 2vw;
+        text-transform: uppercase;
+      }
+      .Kontakt {
+        position: absolute;
+        top: 4.5vw;
+
+        li {
+          display: flex;
+          gap: 1vw;
+          justify-content: space-between;
+          align-items: center;
+          padding-top: 0.5vw;
+          font-size: 0.7vw;
+          color: white;
+          opacity: 50%;
+
+          img {
+            width: 0.8vw;
+            filter: brightness(100);
+          }
+        }
+      }
+
+      article {
+        padding-top: 3.5vw;
+        display: flex;
+        gap: 0.5vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+
+        p {
+          width: 20vw;
+          font-size: 0.8vw;
+          text-align: center;
+        }
+        ul {
+          li:nth-child(1) {
+            &::after {
+              content: " 👍";
+              position: absolute;
+              font-size: 0.8vw;
+            }
+          }
+
+          li {
+            font-size: 1vw;
+            text-transform: capitalize;
+            list-style: disc;
+          }
+        }
+        img {
+          width: 1vw;
+          animation: ShakeSMall 1s 0.2s ease-in-out infinite alternate;
+        }
+        @keyframes ShakeSMall {
+          from {
+            transform: translateY( 0px);
+          }
+
+          to {
+            transform: translateY( 3px);
+          }
+        }
+      }
+
+      .FlipButton {
+        position: absolute;
+        bottom: 2vw;
+        padding: 0.5vw;
+        border-radius: 50vw;
+        color: $DarkGreen;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 2px $DarkGreen;
+        background-color: $DarkGreen;
+        transition: 0.1s;
+        &:hover {
+          background-color: $DarkGreen;
+          outline: 5px solid $DarkGreen;
+          outline-offset: 5px;
+        }
+        img {
+          width: 1.5vw;
+        }
+      }
+    }
+    #BackSide {
+      border-radius: 50%;
+      position: absolute;
+      background-image: url(./assets/img/BackgroundDark.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      width: 100%;
+      height: 100%;
       display: flex;
       gap: 1vw;
       flex-direction: column;
       align-items: center;
       justify-content: center;
 
-      div:nth-child(1) {
+      backface-visibility: hidden;
+      overflow: hidden;
+
+      transform: rotateY(180deg);
+
+      h1 {
+        position: absolute;
+        top: 2.5vw;
+        text-align: center;
+        color: white;
+        opacity: 50%;
+        font-size: 2vw;
+        text-transform: uppercase;
+      }
+      .Kontakt {
+        position: absolute;
+        top: 4.5vw;
+
+        li {
+          display: flex;
+          gap: 1vw;
+          justify-content: space-between;
+          align-items: center;
+          padding-top: 0.5vw;
+          font-size: 0.7vw;
+          color: white;
+          opacity: 50%;
+
+          img {
+            width: 0.8vw;
+            filter: brightness(100);
+          }
+        }
+      }
+
+
+      .FlipButton {
+        position: absolute;
+        bottom: 0;
+        bottom: 2vw;
+        padding: 0.5vw;
+        border-radius: 50vw;
+        color: $Green;
+        border: none;
+        cursor: pointer;
         display: flex;
-        gap: 1vw;
+        justify-content: center;
+        align-items: center;
+        border: solid 2px $Green;
+        background-color: $Green;
+        transition: 0.1s;
+        &:hover {
+          background-color: $Green;
+          outline: 5px solid $Green;
+          outline-offset: 5px;
+        }
+        img {
+          width: 1.5vw;
+        }
+      }
+    }
+
+    form {
+      padding-top: 3vw;
+      display: flex;
+      gap: 1vw;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      div:nth-child(1),
+      div:nth-child(2) {
+        display: flex;
+        gap: 0.5vw;
       }
 
       div {
         input {
           padding: 0.5vw;
           border-radius: 0.5vw;
+          border: solid 2px $Green;
           width: 8vw;
 
-          color: $Bread;
-          font-size: 0.5vw;
-          font-weight: bold;
+          color: black;
+          font-size: 0.8vw;
           &::placeholder {
-            text-transform: uppercase;
-            font-size: 0.5vw;
+            text-transform: capitalize;
+            font-size: 0.8vw;
             color: $Bread;
             font-weight: normal;
           }
-
-          &.Mail {
-            width: 17vw;
+          &:focus {
+            outline: 5px solid $Green;
+            outline-offset: 5px;
+          }
+          &:hover {
+            outline: 5px solid $Green;
+            outline-offset: 5px;
           }
         }
         textarea {
           padding: 0.5vw;
           border-radius: 0.5vw;
-          width: 17vw;
+          border: solid 2px $Green;
+          width: 16.5vw;
           height: 5vw;
           resize: none;
-
-          color: $Bread;
-          font-size: 0.5vw;
-          font-weight: bold;
+          background-color: white;
+          color: black;
+          font-size: 0.6vw;
 
           &::placeholder {
-            text-transform: uppercase;
-            font-size: 0.5vw;
+            text-transform: capitalize;
+            font-size: 0.6vw;
             color: $Bread;
             font-weight: normal;
           }
+          &:focus {
+            outline: 5px solid $Green;
+            outline-offset: 5px;
+          }
+          &:hover {
+            outline: 5px solid $Green;
+            outline-offset: 5px;
+          }
+        }
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+
+        /* Firefox */
+        input[type="number"] {
+          -moz-appearance: textfield;
+        }
+      }
+      button {
+        padding: 0.5vw;
+        border-radius: 0.5vw;
+        width: 8vw;
+
+        color: $Bread;
+        font-size: 0.8vw;
+        font-weight: bold;
+        border: solid 2px $Green;
+        outline-offset: -5px;
+        cursor: pointer;
+        transition: 0.1s;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+          color: $Spot;
+          background-color: $Green;
+          outline: 5px solid $Green;
+          outline-offset: 5px;
         }
       }
     }
