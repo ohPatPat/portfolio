@@ -925,35 +925,88 @@ h5 {
           outline-offset: 5px;
         }
       }
+      #noShow {
+        display: none;
+      }
       #Show {
+        pointer-events: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: absolute;
-        font-size: 10vw;
-        animation: PopUp 2s 1s ease-in-out backwards infinite;
+        width: 30vw;
+        height: 30vw;
+        top: 0vw;
+        border-radius: 50%;
+
+        div:nth-child(1),
+        div:nth-child(2) {
+          opacity: 0;
+          position: absolute;
+          width: 0vw;
+          height: 0vw;
+          border-radius: 50%;
+          animation: pulse 1s 1.5s ease-out;
+        }
+        div:nth-child(2) {
+          animation: pulse 1s 1.8s ease-out;
+        }
+        @keyframes pulse {
+          0% {
+            outline: 1vw solid $Spot;
+            opacity: 100%;
+            width: 2px;
+            height: 2px;
+          }
+          100% {
+            outline: 10vw solid $Spot;
+            width: 40vw;
+            height: 40vw;
+            opacity: 0;
+          }
+        }
+
+        p {
+          top: 30vw;
+          left: 7vw;
+          pointer-events: none;
+          position: absolute;
+          font-size: 10vw;
+          animation: PopUp 2s ease-in-out;
+        }
         @keyframes PopUp {
           0% {
-            top: 28vw;
+            top: 30vw;
             transform: rotateZ(0deg);
+            display: none;
           }
 
           15% {
             transform: rotateZ(0deg) scale(110%);
           }
 
+          40% {
+            top: 5vw;
+            left: 6vw;
+            transform: rotateZ(-30deg) scale(110%);
+          }
           50% {
-            top: 7vw;
+            left: 6vw;
             transform: rotateZ(-30deg) scale(110%);
           }
 
+          90% {
+            left: 8vw;
+            transform: rotateZ(0deg) scale(110%);
+          }
+
           100% {
-            top: 28vw;
-            transform: rotateZ(0deg);
+            top: 7vw;
+            left: 8vw;
+            transform: rotateZ(0deg) scale(110%);
           }
         }
-      }
-      #noShow {
-        display: none;
       }
     }
   }
 }
-

@@ -1,6 +1,6 @@
 import { Galaxy } from "../comp/galaxy/Galaxy.jsx";
 import { MetaTags } from "../comp/MetaTags.jsx";
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import FlipIcon from "../assets/img/icons/FlipArrows.svg";
 import Mail from "../assets/img/icons/InfoIcons_Mail.svg";
@@ -50,6 +50,18 @@ export const Contact = (props) => {
       );
     document.getElementById("Form").reset();
   };
+
+
+  useEffect(() => {
+    let timeoutId;
+    if (isSubmitSuccessful) {
+      timeoutId = setTimeout(() => {
+        setSubmitMessage(null);
+      }, 5000); // change back to "noShow" after 5 seconds (adjust as needed)
+    }
+    return () => clearTimeout(timeoutId);
+  }, [isSubmitSuccessful]);
+
   const Flip = "Flip";
   const NoFlip = "NoFlip";
   const [SideState, setSideState] = useState(
@@ -65,9 +77,6 @@ export const Contact = (props) => {
       localStorage.setItem("SideState", NoFlip);
     }
   };
-
-
-  
 
   return (
     <section id="Contact">
@@ -183,7 +192,7 @@ export const Contact = (props) => {
                     placeholder="Email:*"
                     autoComplete="off"
                     {...register("userEmail", {
-                      required: false,
+                      required: true,
                       pattern: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/i,
                       min: 2,
                     })}
@@ -239,7 +248,12 @@ export const Contact = (props) => {
               >
                 Send
               </button>
-              <p id={isSubmitSuccessful ? "Show" : "noShow"}>👍</p>
+              <div id={submitMessage ? "Show" : "noShow"} class="firework">
+                <div></div>
+                <div></div>
+
+                <p>👍</p>
+              </div>
             </form>
             <button className="FlipButton" onClick={handleClick}>
               <img src={FlipIcon} alt="Flip icon" />
