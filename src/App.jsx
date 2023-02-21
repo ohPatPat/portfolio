@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import "./App.scss";
 import { useEffect } from "react";
+import { PageAnimation } from "./comp/PageAnimation.jsx";
 import { Header } from "./comp/header/Header";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
@@ -26,6 +27,7 @@ function App() {
   return (
     <>
       <Router>
+      {/* <PageAnimation/> */}
       <Header />
         <Routes>
           <Route index element={<Home title={"Patrik Dahl | Portfolio"} currentPage={"Home"}  />}  />

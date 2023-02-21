@@ -19,7 +19,7 @@ export const About = (props) => {
     <section id="About">
       <MetaTags title={props.title}></MetaTags>
       <main>
-        <h1>- OM MIG -</h1>
+        <h1>- Digitalt cv -</h1>
         <div className="FlexWrapper">
           <article id="OmMig">
             <h2>
