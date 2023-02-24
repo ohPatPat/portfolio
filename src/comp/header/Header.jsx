@@ -23,7 +23,7 @@ export const Header = () => {
   };
 
   return (
-    <header onClick={handleClick} className={`${currentPage == "/" ? "true" : "false"}`}>
+    <header onClick={handleClick} className={`${currentPage == "/" ? "HomePage" : "Basic"}`}>
       <nav>
         <NavLink to="/">
           <svg
