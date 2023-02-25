@@ -1,27 +1,28 @@
 import React, { useEffect } from 'react';
 
-export const MetaTags = props => {
+export const MetaTagsExtra = props => {
 	useEffect(() => {
 		window.scrollTo(0, 0); // Start from top when navigating
-        console.log(props.title);
-		document.title = props.title;
+		console.log(props.children.props.children);
+		console.log(props);
+		document.title = props.children.props.children;
 		if (props.description) {
 		  document
 			.querySelector('meta[name="description"]')
 			.setAttribute("content", props.description);
 		}
-		if (props.title) {
+		if (props.children.props.children) {
 			document
 			  .querySelector('meta[name="title"]')
-			  .setAttribute("content", props.title);
+			  .setAttribute("content", props.children.props.children);
 		  }
-		  if (props.title) {
+		  if (props.children.props.children) {
 			document
 			  .querySelector('meta[property="og:title"]')
-			  .setAttribute("content", props.title);
+			  .setAttribute("content", props.children.props.children);
 		  }
 	
-	  }, [props.title, props.description]);
+	  }, [props.children.props.children, props.description]);
 	
 	//   const str = props.title;
 	//   console.log(props);

@@ -1,5 +1,4 @@
 import { Galaxy } from "../comp/galaxy/Galaxy.jsx";
-import { PageAnimation } from "../comp/PageAnimation.jsx";
 import { MetaTags } from "../comp/MetaTags.jsx";
 
 export const Home = (props) => {

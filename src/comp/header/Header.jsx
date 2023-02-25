@@ -1,19 +1,11 @@
 import { NavLink } from "react-router-dom";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useNavigate,
-} from "react-router-dom";
 import "../../App.scss";
-import Logo from "../../assets/img/Logo_2020_Pink.png";
-import Title from "../../assets/img/Title.png";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 export const Header = () => {
   let [currentPage, setCurrentPage] = useState("");
 
-  React.useEffect(() => {
+  useEffect(() => {
     // You can set the currentPage state based on the current page
     setCurrentPage(window.location.pathname);
   }, []);

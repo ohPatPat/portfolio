@@ -248,7 +248,7 @@ export const Contact = (props) => {
               >
                 Send
               </button>
-              <div id={submitMessage ? "Show" : "noShow"} class="firework">
+              <div id={submitMessage ? "Show" : "noShow"}>
                 <div></div>
                 <div></div>
 

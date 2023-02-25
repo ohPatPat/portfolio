@@ -9,6 +9,8 @@ import DkFlag from "../assets/img/icons/InfoIcons_Dk.svg";
 let skills = ["PHOTOSHOP", "ILLUSTRATOR", "INDESIGN", "XD", "lightroom", "bridge", "BILLEDBEHANDLING", "TYPOGRAFI", "LAYOUT", "VECTOR",  "EMBALLAGEDESIGN", "HTML5", "SASS", "JAVASCRIPT", "REACT", "npm", "seo", "GITHUB", "ChatGPT", "SCRUM", "WORDPRESS", "POSTMAN", "CMS", "STRAPI", "PWA", "MYSQL", "VSCODE", "BRACKETS", "DREAMWEAVER", "WINDOWS", "MAC"];
 
 export const About = (props) => {
+
+
   const currentTime = new Date().getHours();
 
   const MorningTime = currentTime < 12;

@@ -31,6 +31,13 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+h5 {
+  font-size: 5vw;
+  text-align: center;
+  line-height: 8;
+  color: black;
+}
+
 #PageAnimation {
   pointer-events: none;
   position: absolute;
@@ -329,13 +336,6 @@ header {
   }
 }
 
-h5 {
-  font-size: 5vw;
-  text-align: center;
-  line-height: 8;
-  color: black;
-}
-
 #Home {
   #Galaxy {
     position: absolute;
@@ -502,6 +502,49 @@ h5 {
   }
 }
 
+#Portfolio {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  animation: FadeIn 0.5s backwards;
+
+  @keyframes FadeIn {
+    from {
+      top: 3vw;
+    }
+
+    to {
+      top: 0vw;
+    }
+  }
+
+  main {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    padding: 3vw 4vw;
+
+    a {
+      color: $Bread;
+      font-size: 3vw;
+      padding-bottom: 2vw;
+    }
+
+    article {
+      p,
+      i {
+        color: $Bread;
+        font-size: 1vw;
+      }
+    }
+  }
+}
+
 #About {
   display: flex;
   align-items: center;
@@ -647,6 +690,7 @@ h5 {
     }
   }
 }
+
 #Contact {
   #Galaxy {
     position: absolute;
@@ -1194,6 +1238,7 @@ h5 {
     }
   }
 }
+
 #Error {
   width: 100vw;
   height: 100vh;
@@ -1213,17 +1258,16 @@ h5 {
       align-items: center;
       font-size: 3vw;
 
-      .Typewriter{
-        span:nth-child(1){
+      .Typewriter {
+        span:nth-child(1) {
           color: $Bread;
           font-weight: bold;
         }
-        span:nth-child(2){
+        span:nth-child(2) {
           color: $Green;
           font-weight: bold;
         }
       }
-
     }
     .Typewriter_cursor::selection {
       background-color: red;
