@@ -9,7 +9,7 @@ export const Portfolio = (props) => {
 
   return (
     <section id="Portfolio">
-      <MetaTags title={props.title}></MetaTags>
+      <MetaTags title={props.title} />
       <main>
         <NavLink to={`${props.cases[0].url}`}>Baba</NavLink>
         <NavLink to={`${props.cases[1].url}`}>Cake</NavLink>

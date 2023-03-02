@@ -545,6 +545,57 @@ header {
   }
 }
 
+#PortfolioCase{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  position: relative;
+  animation: FadeIn 0.5s backwards;
+
+  @keyframes FadeIn {
+    from {
+      top: 3vw;
+    }
+
+    to {
+      top: 0vw;
+    }
+  }
+
+
+
+  main {
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.854);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 50vw;
+    padding: 0vw 0vw 3vw;
+    border-radius: 1vw;
+    position: relative;
+
+    img{
+      width: 100%;
+    }  
+
+    h1 {
+      font-size: 2vw;
+      text-align: center;
+      color: rgba(128, 128, 128, 0.357);
+      text-transform: uppercase;
+    }
+    h2 {
+      font-size: 1vw;
+      text-align: center;
+      color: rgba(128, 128, 128, 0.357);
+      text-transform: uppercase;
+    }
+
+  }
+
+}
+
 #About {
   display: flex;
   align-items: center;
@@ -833,10 +884,6 @@ header {
     z-index: -1;
 
     #Card {
-      background-image: url(./assets/img/BackgroundLight.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
 
       width: 30vw;
       height: 30vw;
@@ -851,6 +898,12 @@ header {
     }
 
     #FrontSide {
+      background-image: url(./assets/img/BackgroundLight.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      border-radius: 50%;
+
       position: absolute;
       width: 100%;
       height: 100%;
@@ -923,7 +976,8 @@ header {
         }
         img {
           width: 1vw;
-          animation: ShakeSMall 1s 0.2s ease-in-out infinite alternate;
+          position: relative;
+          animation: ShakeSMall 1s ease-in-out infinite alternate;
         }
         @keyframes ShakeSMall {
           from {
