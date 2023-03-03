@@ -40,7 +40,8 @@ h5 {
 
 #PageAnimation {
   pointer-events: none;
-  position: absolute;
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -274,6 +275,7 @@ header {
           font-size: 1vw;
           position: relative;
           mix-blend-mode: difference;
+
           cursor: pointer;
 
           &:hover + .Hand,
@@ -545,7 +547,7 @@ header {
   }
 }
 
-#PortfolioCase{
+#PortfolioCase {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -564,8 +566,6 @@ header {
     }
   }
 
-
-
   main {
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0.854);
@@ -575,12 +575,13 @@ header {
     border-radius: 1vw;
     position: relative;
 
-    img{
+    img {
       width: 100%;
-    }  
+    }
 
     h1 {
       font-size: 2vw;
+      padding-top: 2vw;
       text-align: center;
       color: rgba(128, 128, 128, 0.357);
       text-transform: uppercase;
@@ -592,8 +593,55 @@ header {
       text-transform: uppercase;
     }
 
-  }
+    article {
+      padding: 2vw 4vw;
+      h3 {
+        text-transform: uppercase;
+        font-size: 1vw;
+        color: rgba(128, 128, 128, 0.357);
+      }
+      hr {
+        width: 2.5vw;
+        border-top: solid 0.2vw $Green;
+      }
 
+      .Apps {
+        display: flex;
+        gap: 0.5vw;
+        padding: 0.5vw 0 1.5vw;
+        li {
+          height: 0;
+          list-style: none;
+          padding: 0;
+          img {
+            width: 1.5vw;
+            border-radius: 5px;
+          }
+        }
+      }
+
+      p,
+      b {
+        color: $Bread;
+        font-size: 1.5vw;
+      }
+      b {
+        text-transform: uppercase;
+      }
+
+      ul {
+        li,
+        b {
+          color: $Bread;
+          padding-top: 0.5vw;
+          font-size: 1vw;
+        }
+        li {
+          list-style: disc inside;
+        }
+      }
+    }
+  }
 }
 
 #About {
@@ -682,13 +730,13 @@ header {
     #CV {
       ul {
         width: 11vw;
-        padding-top: 0.1vw;
+        padding-top: 0.3vw;
 
         li {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          padding-top: 0.5vw;
+          padding-bottom: 0.5vw;
           font-size: 0.8vw;
           color: $Bread;
 
@@ -710,6 +758,42 @@ header {
             .Small {
               color: $Bread;
               font-size: 0.7vw;
+            }
+          }
+        }
+        &.SocialLinks {
+          display: flex;
+          justify-content: flex-start;
+          gap: 0.5vw;
+          li {
+            &:nth-child(3) {
+              transform: rotateZ(90deg);
+              position: relative;
+              img {
+                position: absolute;
+                bottom: 1.5vw;
+                right: 0;
+
+                animation: ShakeSMall 1s ease-in-out infinite alternate;
+
+                @keyframes ShakeSMall {
+                  from {
+                    transform: translateY(0px);
+                  }
+
+                  to {
+                    transform: translateY(3px);
+                  }
+                }
+              }
+            }
+
+            a {
+              img {
+                width: 1.5vw;
+                border-radius: 50%;
+                box-shadow: rgba(0, 0, 0, 0.334) 0px 1px 4px;
+              }
             }
           }
         }
@@ -736,6 +820,7 @@ header {
           font-weight: bold;
           padding: 0.3vw 0.5vw;
           border-radius: 1vw;
+          box-shadow: rgba(0, 0, 0, 0.334) 0px 1px 4px;
         }
       }
     }
@@ -884,7 +969,6 @@ header {
     z-index: -1;
 
     #Card {
-
       width: 30vw;
       height: 30vw;
       border-radius: 50%;
