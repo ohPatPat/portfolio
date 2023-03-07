@@ -1,8 +1,13 @@
 import { MetaTags } from "../comp/MetaTags.jsx";
+import ImageZoom from "react-image-zooom";
 import React, { useState, useEffect } from "react";
 import Ban_Baba from "../assets/img/products/BabaEnergy/Banners_BabaEnergy.jpg";
 import Illustrator from "../assets/img/icons/Icons_Illustrator.svg";
 import Indesign from "../assets/img/icons/Icons_Indesign.svg";
+
+import GreenCan from "../assets/img/products/BabaEnergy/3 cans Mockup Matcha.jpg";
+import PinkCan from "../assets/img/products/BabaEnergy/3 cans Mockup Strawberry.jpg";
+import OrengeCan from "../assets/img/products/BabaEnergy/3 cans Mockup Orange.jpg";
 
 import GreenClosed from "../assets/img/products/BabaEnergy/Matroska_GreenClosed.jpg";
 import GreenOpen from "../assets/img/products/BabaEnergy/Matroska_GreenOpen.jpg";
@@ -10,6 +15,16 @@ import PinkClosed from "../assets/img/products/BabaEnergy/Matroska_PinkClosed.jp
 import PinkOpen from "../assets/img/products/BabaEnergy/Matroska_PinkOpen.jpg";
 import OrengeClosed from "../assets/img/products/BabaEnergy/Matroska_OrengeClosed.jpg";
 import OrengeOpen from "../assets/img/products/BabaEnergy/Matroska_OrengeOpen.jpg";
+
+import GreenSticker from "../assets/img/products/BabaEnergy/Matroska Matcha.jpg";
+import PinkSticker from "../assets/img/products/BabaEnergy/Matroska Strawberry.jpg";
+import OrengeSticker from "../assets/img/products/BabaEnergy/Matroska Orange.jpg";
+
+import GreenDieLineFront from "../assets/img/products/BabaEnergy/Matroska 4pack Dieline_Green.jpg";
+import PinkDieLineFront from "../assets/img/products/BabaEnergy/Matroska 4pack Dieline_Pink.jpg";
+import OrengeDieLineFront from "../assets/img/products/BabaEnergy/Matroska 4pack Dieline_Orenge.jpg";
+
+import BrainStorm from "../assets/img/products/BabaEnergy/Screenshot1.png";
 
 export const PortfolioCase = (props) => {
   let [specificCase, setspecificCase] = useState(0);
@@ -50,18 +65,26 @@ export const PortfolioCase = (props) => {
   return (
     <section id="PortfolioCase">
       {isModalOpen && (
-        <section id="Modal" onClick={handleClose}>
-          <img src={imageSrc} alt="modal image" />
-            <a href="#" class="close-button" onClick={handleClose}>
-              <div class="in">
-                <div class="close-button-block"></div>
-                <div class="close-button-block"></div>
-              </div>
-              <div class="out">
-                <div class="close-button-block"></div>
-                <div class="close-button-block"></div>
-              </div>
-            </a>
+        <section id="Modal">
+          <ImageZoom
+            className="HighlightImg"
+            width="auto"
+            height=" 100%"
+            src={imageSrc}
+            alt={imageSrc}
+            zoom="300"
+          />
+
+          <a href="#" className="close-button" onClick={handleClose}>
+            <div className="in">
+              <div className="close-button-block"></div>
+              <div className="close-button-block"></div>
+            </div>
+            <div className="out">
+              <div className="close-button-block"></div>
+              <div className="close-button-block"></div>
+            </div>
+          </a>
         </section>
       )}
 
@@ -84,53 +107,123 @@ export const PortfolioCase = (props) => {
             </ul>
             <p>
               <b>Baba Energy</b> - Østeuropæisk inspireret energidriksmærke, der
-              prioriterer branding og promovering af femininitet/feminisme
+              prioriterer branding og promovering af femininitet/feminisme👧
             </p>
-            <section id="Grid">
-              <img
-                src={GreenClosed}
-                alt="GreenClosed"
-                onClick={() => handleClick(GreenClosed)}
-              />
-              <img
-                src={PinkClosed}
-                alt="PinkClosed"
-                onClick={() => handleClick(PinkClosed)}
-              />
-              <img
-                src={OrengeClosed}
-                alt="OrengeClosed"
-                onClick={() => handleClick(OrengeClosed)}
-              />
-              <img
-                src={GreenOpen}
-                alt="GreenOpen"
-                onClick={() => handleClick(GreenOpen)}
-              />
-              <img
-                src={PinkOpen}
-                alt="PinkOpen"
-                onClick={() => handleClick(PinkOpen)}
-              />
-              <img
-                src={OrengeOpen}
-                alt="OrengeOpen"
-                onClick={() => handleClick(OrengeOpen)}
-              />
+            <section className="Grid">
+              <div>
+                <img
+                  src={GreenOpen}
+                  alt="GreenOpen"
+                  onClick={() => handleClick(GreenOpen)}
+                />
+                <img
+                  src={GreenClosed}
+                  alt="GreenClosed"
+                  onClick={() => handleClick(GreenOpen)}
+                />
+              </div>
+              <div>
+                <img
+                  src={PinkOpen}
+                  alt="PinkOpen"
+                  onClick={() => handleClick(PinkOpen)}
+                />
+                <img
+                  src={PinkClosed}
+                  alt="PinkClosed"
+                  onClick={() => handleClick(PinkOpen)}
+                />
+              </div>
+              <div>
+                <img
+                  src={OrengeOpen}
+                  alt="OrengeOpen"
+                  onClick={() => handleClick(OrengeOpen)}
+                />
+                <img
+                  src={OrengeClosed}
+                  alt="OrengeClosed"
+                  onClick={() => handleClick(OrengeOpen)}
+                />
+              </div>
             </section>
+
             <ul>
               <li>
-                <b>Timeline:</b> 4 Måneder, 2020
+                <b> Tidslinje:</b> 4 Måneder, 2020
               </li>
               <li>
                 <b>Kunde:</b> Opdigtet projekt til min Svendeprøve
               </li>
               <li>
-                <b>Problemomfang:</b> Konceptudvikling, Illostration, Marketing,
+                <b>Udfordringer:</b> Konceptudvikling, Illostration, Marketing,
                 Branding, Karakterdesign, Logo Design, Typografi, Layout,
                 Emballagedesign, Dåse Design, Deadline
               </li>
             </ul>
+            <h4>Dåse Design</h4>
+            <hr />
+            <section className="Grid">
+              <img
+                src={GreenCan}
+                alt="GreenCan"
+                onClick={() => handleClick(GreenCan)}
+              />
+              <img
+                src={PinkCan}
+                alt="PinkCan"
+                onClick={() => handleClick(PinkCan)}
+              />
+              <img
+                src={OrengeCan}
+                alt="OrengeCan"
+                onClick={() => handleClick(OrengeCan)}
+              />
+              <img
+                src={GreenSticker}
+                alt="GreenSticker"
+                onClick={() => handleClick(GreenSticker)}
+              />
+              <img
+                src={PinkSticker}
+                alt="PinkSticker"
+                onClick={() => handleClick(PinkSticker)}
+              />
+              <img
+                src={OrengeSticker}
+                alt="OrengeSticker"
+                onClick={() => handleClick(OrengeSticker)}
+              />
+            </section>
+            <h4>Emballagedesign</h4>
+            <hr />
+            <section className="Grid">
+              <img
+                src={GreenDieLineFront}
+                alt="GreenDieLineFront"
+                onClick={() => handleClick(GreenDieLineFront)}
+              />
+              <img
+                src={PinkDieLineFront}
+                alt="PinkDieLineFront"
+                onClick={() => handleClick(PinkDieLineFront)}
+              />
+              <img
+                src={OrengeDieLineFront}
+                alt="OrengeDieLineFront"
+                onClick={() => handleClick(OrengeDieLineFront)}
+              />
+            </section>
+            <h4>Konceptudvikling</h4>
+            <hr />
+            <section className="NoGrid">
+
+            <img
+              src={BrainStorm}
+              alt={BrainStorm}
+              onClick={() => handleClick(BrainStorm)}
+            />
+            </section>
           </article>
         </main>
       ) : null}

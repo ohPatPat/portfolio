@@ -571,7 +571,7 @@ header {
 
   #Modal {
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.319);
+    background-color: rgba(0, 0, 0, 0.445);
     top: 0vw;
     width: 100vw;
     height: 100vh;
@@ -580,7 +580,7 @@ header {
     justify-content: center;
     align-items: center;
 
-    img {
+    .HighlightImg {
       height: 90%;
     }
 
@@ -698,10 +698,14 @@ header {
 
     article {
       padding: 2vw 4vw;
-      h3 {
+      h3,
+      h4 {
         text-transform: uppercase;
         font-size: 1vw;
         color: rgba(128, 128, 128, 0.357);
+      }
+      h4 {
+        margin-top: 3vw;
       }
       hr {
         width: 2.5vw;
@@ -744,11 +748,34 @@ header {
           text-transform: capitalize;
         }
       }
-      #Grid {
+      .Grid {
         padding: 2vw 1vw;
         display: grid;
         gap: 0.5vw;
         grid-template-columns: 1fr 1fr 1fr;
+        img {
+          width: 100%;
+          cursor: pointer;
+        }
+        div {
+          position: relative;
+          height: auto;
+          width: auto;
+          padding-bottom: 115%;
+          img {
+            position: absolute;
+            width: 100%;
+          }
+          img:nth-child(2) {
+            transition: 0.5s;
+            &:hover {
+              opacity: 0;
+            }
+          }
+        }
+      }
+      .NoGrid {
+        padding: 2vw 1vw 0;
         img {
           width: 100%;
           cursor: pointer;
