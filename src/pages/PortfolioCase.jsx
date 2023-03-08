@@ -30,6 +30,7 @@ export const PortfolioCase = (props) => {
   let [specificCase, setspecificCase] = useState(0);
   const [imageSrc, setImageSrc] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
 
   useEffect(() => {
     switch (window.location.pathname) {
@@ -52,15 +53,25 @@ export const PortfolioCase = (props) => {
   const handleClick = (src) => {
     setImageSrc(src);
     setIsModalOpen(true);
-    document.body.classList.add("modal-open");
+    setPrevScrollPos(window.pageYOffset);
+    document.body.style.overflow = "hidden";
   };
 
   // function to close the modal
   const handleClose = () => {
     setImageSrc("");
     setIsModalOpen(false);
-    document.body.classList.remove("modal-open");
+    document.body.style.overflow = "auto";
   };
+
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+      window.scrollTo(0, prevScrollPos);
+    }
+  }, [isModalOpen, prevScrollPos]);
 
   return (
     <section id="PortfolioCase">
@@ -217,12 +228,11 @@ export const PortfolioCase = (props) => {
             <h4>Konceptudvikling</h4>
             <hr />
             <section className="NoGrid">
-
-            <img
-              src={BrainStorm}
-              alt={BrainStorm}
-              onClick={() => handleClick(BrainStorm)}
-            />
+              <img
+                src={BrainStorm}
+                alt={BrainStorm}
+                onClick={() => handleClick(BrainStorm)}
+              />
             </section>
           </article>
         </main>

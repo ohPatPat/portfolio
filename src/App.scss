@@ -27,11 +27,9 @@ html {
   background-attachment: fixed;
 }
 
+
 body::-webkit-scrollbar {
   display: none;
-}
-body.modal-open {
-  overflow: hidden;
 }
 
 h5 {
@@ -579,6 +577,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: hidden;
 
     .HighlightImg {
       height: 90%;
