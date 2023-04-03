@@ -105,14 +105,13 @@ export const Contact = (props) => {
               <ul>
                 <li>fuldtid</li>
                 <li>deltid.</li>
-                <li>freelance.</li>
                 <li>praktik.</li>
               </ul>
               <p>
                 Så vil jeg meget gerne høre fra jer! <br /> I kan kontakte mig
                 via min email, Tlf. Eller en direkte besked via min hjemmeside{" "}
                 {}
-                <i>(til min email)</i>. <br /> <br /> FLIP!
+                <i>(til min email)</i>. <br /> <br /> <span>FLIP!</span>
               </p>
               <img src={HandPoint} alt="" />
             </article>
@@ -248,6 +247,7 @@ export const Contact = (props) => {
               >
                 Send
               </button>
+              {/* <div id="Show" > */}
               <div id={submitMessage ? "Show" : "noShow"}>
                 <div></div>
                 <div></div>

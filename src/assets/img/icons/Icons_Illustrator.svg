@@ -1,1 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160.72 160.91"><defs><style>.cls-1{fill:#ff9a00;}.cls-2{fill:#300;}</style></defs><rect class="cls-2" x="0" width="160.72" height="160.91"/><ellipse class="cls-1" cx="120.58" cy="46.51" rx="9.94" ry="9.95"/><rect class="cls-1" x="111.87" y="62.63" width="17.15" height="61.72" rx="7.96" ry="7.96"/><path class="cls-1" d="m74.11,42.64h-20.54c.26,4.05-.88,7.57-.88,7.57l-24.97,72.07c-.29.84.33,1.72,1.22,1.72h1.06l13.21.04c.57,0,1.07-.36,1.24-.9l5.82-18.38,28.67.09,6.16,18.31c.18.53.67.88,1.23.88h15.68c.89,0,1.52-.88,1.22-1.73l-27.89-78.81c-.18-.52-.67-.86-1.22-.86Zm-19.48,46.45s8.91-27.47,9.62-32.23l10.03,32.23h-19.64Z"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 160.7 160.9" style="enable-background:new 0 0 160.7 160.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.5;}
+	.st1{fill:#231F20;}
+	.st2{fill:#0071AE;}
+	.st3{fill:#F7F7F5;}
+	.st4{fill:#390000;}
+	.st5{fill:#FF9A00;}
+	.st6{fill:#001834;}
+	.st7{fill:#00A9FF;}
+	.st8{fill:#49021F;}
+	.st9{fill:#FF3366;}
+</style>
+<g>
+	<rect x="0" class="st4" width="160.7" height="160.9"/>
+	<g>
+		<ellipse class="st5" cx="120.6" cy="46.5" rx="9.9" ry="9.9"/>
+		<path class="st5" d="M121.1,124.3h-1.2c-4.4,0-8-3.6-8-8V70.6c0-4.4,3.6-8,8-8h1.2c4.4,0,8,3.6,8,8v45.8
+			C129,120.8,125.5,124.3,121.1,124.3z"/>
+		<path class="st5" d="M74.1,42.6H53.6c0.3,4.1-0.9,7.6-0.9,7.6l-25,72.1c-0.3,0.8,0.3,1.7,1.2,1.7H30l13.2,0c0.6,0,1.1-0.4,1.2-0.9
+			l5.8-18.4l28.7,0.1l6.2,18.3c0.2,0.5,0.7,0.9,1.2,0.9H102c0.9,0,1.5-0.9,1.2-1.7L75.3,43.5C75.1,43,74.7,42.6,74.1,42.6z
+			 M54.6,89.1c0,0,8.9-27.5,9.6-32.2l10,32.2H54.6z"/>
+	</g>
+</g>
+</svg>

@@ -28,17 +28,14 @@ let PortfolioInfo = [
   {
     caseName: "Baba Energy",
     url: "Baba_Energy",
-    img: "moenaomiiOverlaysWaterMark2.png",
   },
   {
-    caseName: "Cake",
-    url: "Cake",
-    img: "SenpaiHinotamaOverlaysWaterMark.png",
+    caseName: "Springeren",
+    url: "Springeren",
   },
   {
-    caseName: "Dogie",
-    url: "Dogie",
-    img: "SenpaiHinotamaOverlaysWaterMark.png",
+    caseName: "Skagens Museum",
+    url: "Skagens_Museum",
   },
 ];
 
@@ -71,7 +68,6 @@ function App() {
             path={`/portfolio/:${case_id}`}
             element={<PortfolioCase cases={PortfolioInfo} />}
           />
-
           <Route
             path="/about"
             element={<About title={"Patrik Dahl  | Om mig"} />}
@@ -80,7 +76,7 @@ function App() {
             path="/contact"
             element={<Contact title={"Patrik Dahl  | Kontakt"} />}
           />
-          <Route path="*" element={<Error title={"Patrik Dahl  | 🤔"} />} />
+          {/* <Route path="*" element={<Error title={"Patrik Dahl  | 🤔"} />} /> */}
         </Routes>
       </Router>
     </>

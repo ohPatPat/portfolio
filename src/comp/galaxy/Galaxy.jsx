@@ -1,12 +1,13 @@
-import Placeholder from "../../assets/img/deco/PatPic.jpg";
 import PatPic from "../../assets/img/deco/PatPic.jpg";
+import PDF from "../../assets/img/PatrikDahl.pdf";
 export const Galaxy = () => {
 
   return (
     <div id="Galaxy">
-      <a id="CvBtt" href={PatPic} download> <p>CV</p>
+      <a id="CvBtt" href={PDF} target="_blank">
+        <p> CV</p>
       </a>
-      <img src={Placeholder} alt="Placeholder" />
+      <img src={PatPic} alt="Profile picture" loading="lazy" />
       <svg
         version="1.1"
         id="WholeSVG"
