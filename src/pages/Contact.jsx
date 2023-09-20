@@ -32,7 +32,7 @@ export const Contact = (props) => {
     //e.preventDefault();
     emailjs
       .sendForm(
-        "service_zltc55m",
+        "service_3kxwtm1",
         "template_qw53jhd",
         form.current,
         "PWAaqSbEwQXEo4NqD"
@@ -100,7 +100,7 @@ export const Contact = (props) => {
             <article>
               <p>
                 Hvis i har fundet mig eller mit arbejde interessant og overvejer
-                mig, som en del af jers team - som:
+                mig, som en del af jers team -
               </p>
               <ul>
                 <li>fuldtid</li>

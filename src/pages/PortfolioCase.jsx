@@ -57,12 +57,41 @@ import Skagen_brochure6 from "../assets/img/products/Skagen/Skagen_brochure6.jpg
 import Skagen_brochure7 from "../assets/img/products/Skagen/Skagen_brochure7.jpg";
 import Skagen_brochure8 from "../assets/img/products/Skagen/Skagen_brochure8.jpg";
 
+// Hjerte
+import Ban_Hjerte from "../assets/img/products/Hjerte/Banners_Hjerte.jpg";
+import BusMockup from "../assets/img/products/Hjerte/BusMockup.png";
+import BusMockup_Finished from "../assets/img/products/Hjerte/Billed 2.jpg";
+
+import Fishing from "../assets/img/products/Hjerte/Fishing.png";
+import Horse from "../assets/img/products/Hjerte/Horse.png";
+import Road from "../assets/img/products/Hjerte/Road.png";
+
+import Instagram_post from "../assets/img/products/Hjerte/Instagram post.jpg";
+import InstaMockup1 from "../assets/img/products/Hjerte/InstaMockup1.png";
+import InstaMockup2 from "../assets/img/products/Hjerte/InstaMockup2.png";
+import InstaMockup3 from "../assets/img/products/Hjerte/InstaMockup3.png";
+
+
+
 export const PortfolioCase = (props) => {
   let [specificCase, setspecificCase] = useState(0);
   const [imageSrc, setImageSrc] = useState("");
   const [isModalOpenW, setIsModalOpenW] = useState(false);
   const [isModalOpenH, setIsModalOpenH] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsLargeScreen(window.innerWidth > 767);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     switch (window.location.pathname) {
@@ -75,6 +104,9 @@ export const PortfolioCase = (props) => {
       case "/portfolio/Skagens_Museum":
         setspecificCase(2);
         break;
+        case "/portfolio/Hjerte_Foreningen":
+          setspecificCase(3);
+          break;  
       default:
         setspecificCase(null);
         break;
@@ -83,15 +115,19 @@ export const PortfolioCase = (props) => {
 
   // function to handle click event and open the modal
   const handleClickH = (src) => {
-    setImageSrc(src);
-    setIsModalOpenH(true);
-    setPrevScrollPos(window.pageYOffset);
+    if (isLargeScreen) {
+      setImageSrc(src);
+      setIsModalOpenH(true);
+      setPrevScrollPos(window.pageYOffset);
+    }
   };
 
   const handleClickW = (src) => {
-    setImageSrc(src);
-    setIsModalOpenW(true);
-    setPrevScrollPos(window.pageYOffset);
+    if (isLargeScreen) {
+      setImageSrc(src);
+      setIsModalOpenW(true);
+      setPrevScrollPos(window.pageYOffset);
+    }
   };
 
   // function to close the modal
@@ -165,7 +201,7 @@ export const PortfolioCase = (props) => {
 
       {specificCase === 0 ? (
         <main>
-          <img src={Ban_Baba} alt="Baba Energy banner" loading="lazy"/>
+          <img src={Ban_Baba} alt="Baba Energy banner" loading="lazy" />
           <h1>{`- ${props.cases[specificCase].caseName} -`}</h1>
           <h2>mediegrafiker svendestykke</h2>
           <article>
@@ -174,10 +210,14 @@ export const PortfolioCase = (props) => {
               <hr />
               <ul className="Apps">
                 <li>
-                  <img src={Illustrator} alt="Illustrator Logo" loading="lazy"/>
+                  <img
+                    src={Illustrator}
+                    alt="Illustrator Logo"
+                    loading="lazy"
+                  />
                 </li>
                 <li>
-                  <img src={Indesign} alt="Indesign Logo" loading="lazy"/>
+                  <img src={Indesign} alt="Indesign Logo" loading="lazy" />
                 </li>
               </ul>
               <p>
@@ -333,7 +373,7 @@ export const PortfolioCase = (props) => {
       ) : null}
       {specificCase === 1 ? (
         <main>
-          <img src={Ban_Spring} alt="Spring banner" loading="lazy"/>
+          <img src={Ban_Spring} alt="Spring banner" loading="lazy" />
           <h1>{`- ${props.cases[specificCase].caseName} -`}</h1>
           <h2>Maritimt oplevelsescenter</h2>
           <article>
@@ -342,13 +382,17 @@ export const PortfolioCase = (props) => {
               <hr />
               <ul className="Apps">
                 <li>
-                  <img src={Indesign} alt="Indesign Logo" loading="lazy"/>
+                  <img src={Indesign} alt="Indesign Logo" loading="lazy" />
                 </li>
                 <li>
-                  <img src={Illustrator} alt="Illustrator Logo" loading="lazy"/>
+                  <img
+                    src={Illustrator}
+                    alt="Illustrator Logo"
+                    loading="lazy"
+                  />
                 </li>
                 <li>
-                  <img src={Photoshop} alt="Illustrator Logo" loading="lazy"/>
+                  <img src={Photoshop} alt="Illustrator Logo" loading="lazy" />
                 </li>
                 <li>
                   <p>📷</p>
@@ -555,6 +599,120 @@ export const PortfolioCase = (props) => {
           </article>
         </main>
       ) : null}
+            {specificCase === 3 ? (
+        <main>
+          <img src={Ban_Hjerte} alt="Hjerte foreningen banner" loading="lazy" />
+          <h1>{`- ${props.cases[specificCase].caseName} - `}</h1>
+          <article>
+            <span>
+              <h3>Info</h3>
+              <hr />
+              <ul className="Apps">
+                <li>
+                  <img src={Photoshop} alt="Photoshop Logo" loading="lazy" />
+                </li>
+              </ul>
+              <p>
+                <b>{props.cases[specificCase].caseName}</b> - Hjælper mænd med at se, seriøsiteten i et større billede.
+              </p>
+            </span>
+            <section className="Grid Hover">
+              <div>
+                <img
+                  className="MediumSize NotDisapear"
+                  src={BusMockup_Finished}
+                  alt={BusMockup_Finished}
+                  loading="lazy"
+                  onClick={() => handleClickW(BusMockup_Finished)}
+                />
+                <img
+                  className="MediumSize Disapear"
+                  src={BusMockup}
+                  alt={BusMockup}
+                  loading="lazy"
+                  onClick={() => handleClickW(BusMockup_Finished)}
+                />
+              </div>
+            </section>
+
+            <ul>
+              <li>
+                <b> Tidslinje:</b> 2 dage, 2020.
+              </li>
+              <li>
+                <b>Kunde:</b> Projekt Til Min Svendeprøve - Samarbejde med Hjerte foreningen.
+              </li>
+              <li>
+                <b>Udfordringer:</b> Konceptudvikling, Marketing, Billedbehandling, Typografi, Layout, Deadline.
+              </li>
+            </ul>
+            <span>
+              <h4>Bus reklamer</h4>
+              <hr />
+              <span>
+                <section className="Grid Grid3">
+                  <img
+                    src={Fishing}
+                    alt={Fishing}
+                    loading="lazy"
+                    onClick={() => handleClickW(Fishing)}
+                  />
+                  <img
+                    src={Horse}
+                    alt={Horse}
+                    loading="lazy"
+                    onClick={() => handleClickW(Horse)}
+                  />
+                  <img
+                    src={Road}
+                    alt={Road}
+                    loading="lazy"
+                    onClick={() => handleClickW(Road)}
+                  />
+                </section>
+              </span>
+            </span>
+
+            <span>
+              <h4>Instagram Karrusel post</h4>
+              <hr />
+              <span>
+                <section className="Grid Grid3">
+                  <img
+                    src={InstaMockup1}
+                    alt={InstaMockup1}
+                    loading="lazy"
+                    onClick={() => handleClickW(InstaMockup1)}
+                  />
+                  <img
+                    src={InstaMockup2}
+                    alt={InstaMockup2}
+                    loading="lazy"
+                    onClick={() => handleClickW(InstaMockup2)}
+                  />
+                  <img
+                    src={InstaMockup3}
+                    alt={InstaMockup3}
+                    loading="lazy"
+                    onClick={() => handleClickW(InstaMockup3)}
+                  />
+                </section>
+                <section className="Grid">
+                  <img
+                    src={Instagram_post}
+                    alt={Instagram_post}
+                    loading="lazy"
+                    onClick={() => handleClickW(Instagram_post)}
+                  />
+                </section>
+
+              </span>
+            </span>
+
+          </article>
+        </main>
+      ) : null}
+
     </section>
   );
 };

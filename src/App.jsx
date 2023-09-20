@@ -37,6 +37,10 @@ let PortfolioInfo = [
     caseName: "Skagens Museum",
     url: "Skagens_Museum",
   },
+  {
+    caseName: "Hjerte Foreningen",
+    url: "Hjerte_Foreningen",
+  },
 ];
 
 function App() {

@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import Ban_Baba from "../assets/img/products/BabaEnergy/Banners_BabaEnergy.jpg";
 import Ban_Spring from "../assets/img/products/Springeren/Banners_Springeren.jpg";
 import Ban_Skagen from "../assets/img/products/Skagen/Banners_Skagen.jpg";
+import Ban_Hjerte from "../assets/img/products/Hjerte/Banners_Hjerte.jpg";
 
 
 export const Portfolio = (props) => {
@@ -25,6 +26,11 @@ export const Portfolio = (props) => {
         <NavLink to={`${props.cases[2].url}`}>
         <img src={Ban_Skagen} alt="Skagen banner" loading="lazy"/>
         </NavLink>
+
+        <NavLink to={`${props.cases[3].url}`}>
+        <img src={Ban_Hjerte} alt="Hjerte banner" loading="lazy"/>
+        </NavLink>
+
 
 
         <article>
