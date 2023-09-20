@@ -31,6 +31,9 @@ export const Portfolio = (props) => {
         <img src={Ban_Hjerte} alt="Hjerte banner" loading="lazy"/>
         </NavLink>
 
+        <NavLink to={`${props.cases[4].url}`}>
+        <img src={Ban_Hjerte} alt="Hjerte banner" loading="lazy"/>
+        </NavLink>
 
 
         <article>

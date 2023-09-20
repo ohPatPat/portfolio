@@ -41,6 +41,10 @@ let PortfolioInfo = [
     caseName: "Hjerte Foreningen",
     url: "Hjerte_Foreningen",
   },
+  {
+    caseName: "SundhedsSupport",
+    url: "SundhedsSupport",
+  },
 ];
 
 function App() {
