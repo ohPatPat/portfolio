@@ -4,6 +4,8 @@ import React, { useState, useEffect } from "react";
 import Illustrator from "../assets/img/icons/Icons_Illustrator.svg";
 import Indesign from "../assets/img/icons/Icons_Indesign.svg";
 import Photoshop from "../assets/img/icons/Icons_Photoshop.svg";
+import wordpress from "../assets/img/icons/Icons_Wordpress.svg";
+import Canva from "../assets/img/icons/Icons_Canva.svg";
 
 // BabaEnergy pics
 import Ban_Baba from "../assets/img/products/BabaEnergy/Banners_BabaEnergy.jpg";
@@ -71,7 +73,15 @@ import InstaMockup1 from "../assets/img/products/Hjerte/InstaMockup1.png";
 import InstaMockup2 from "../assets/img/products/Hjerte/InstaMockup2.png";
 import InstaMockup3 from "../assets/img/products/Hjerte/InstaMockup3.png";
 
+//SundhedsSupport
+import Ban_SundhedsSupport from "../assets/img/products/SundhedsSupport/Banners_SundhedsSupport.jpg";
+import DesktopMockupTop_SundhedsSupport from "../assets/img/products/SundhedsSupport/DesktopMockupTop-SundhedsSupport.png";
+import DesktopMockupBot_SundhedsSupport from "../assets/img/products/SundhedsSupport/DesktopMockupBot-SundhedsSupport.png";
+import FacebookMockup_SundhedsSupport from "../assets/img/products/SundhedsSupport/FacebookMockup-SundhedsSupport.png";
 
+import BrochureFront_SundhedsSupport from "../assets/img/products/SundhedsSupport/BrochureFront_SundhedsSupport.png";
+import BrochureBack_SundhedsSupport from "../assets/img/products/SundhedsSupport/BrochureBack_SundhedsSupport.png";
+import Businesscard_SundhedsSupport from "../assets/img/products/SundhedsSupport/Businesscard_SundhedsSupport.png";
 
 export const PortfolioCase = (props) => {
   let [specificCase, setspecificCase] = useState(0);
@@ -104,9 +114,12 @@ export const PortfolioCase = (props) => {
       case "/portfolio/Skagens_Museum":
         setspecificCase(2);
         break;
-        case "/portfolio/Hjerte_Foreningen":
-          setspecificCase(3);
-          break;  
+      case "/portfolio/Hjerte_Foreningen":
+        setspecificCase(3);
+        break;
+      case "/portfolio/SundhedsSupport":
+        setspecificCase(4);
+        break;
       default:
         setspecificCase(null);
         break;
@@ -599,7 +612,7 @@ export const PortfolioCase = (props) => {
           </article>
         </main>
       ) : null}
-            {specificCase === 3 ? (
+      {specificCase === 3 ? (
         <main>
           <img src={Ban_Hjerte} alt="Hjerte foreningen banner" loading="lazy" />
           <h1>{`- ${props.cases[specificCase].caseName} - `}</h1>
@@ -613,7 +626,8 @@ export const PortfolioCase = (props) => {
                 </li>
               </ul>
               <p>
-                <b>{props.cases[specificCase].caseName}</b> - Hjælper mænd med at se, seriøsiteten i et større billede.
+                <b>{props.cases[specificCase].caseName}</b> - Hjælper mænd med
+                at se, seriøsiteten i et større billede.
               </p>
             </span>
             <section className="Grid Hover">
@@ -640,10 +654,12 @@ export const PortfolioCase = (props) => {
                 <b> Tidslinje:</b> 2 dage, 2020.
               </li>
               <li>
-                <b>Kunde:</b> Projekt Til Min Svendeprøve - Samarbejde med Hjerte foreningen.
+                <b>Kunde:</b> Projekt Til Min Svendeprøve - Samarbejde med
+                Hjerte foreningen.
               </li>
               <li>
-                <b>Udfordringer:</b> Konceptudvikling, Marketing, Billedbehandling, Typografi, Layout, Deadline.
+                <b>Udfordringer:</b> Konceptudvikling, Marketing,
+                Billedbehandling, Typografi, Layout, Deadline.
               </li>
             </ul>
             <span>
@@ -705,14 +721,136 @@ export const PortfolioCase = (props) => {
                     onClick={() => handleClickW(Instagram_post)}
                   />
                 </section>
+              </span>
+            </span>
+          </article>
+        </main>
+      ) : null}
+      {specificCase === 4 ? (
+        <main>
+          <img
+            src={Ban_SundhedsSupport}
+            alt="SundhedsSupport banner"
+            loading="lazy"
+          />
+          <h1>{`- ${props.cases[specificCase].caseName} - `}</h1>
+          <article>
+            <span>
+              <h3>Info</h3>
+              <hr />
+              <ul className="Apps">
+                <li>
+                  <img src={Indesign} alt="Indesign Logo" loading="lazy" />
+                </li>
+                <li>
+                  <img
+                    src={Illustrator}
+                    alt="Illustrator Logo"
+                    loading="lazy"
+                  />
+                </li>
+                <li>
+                  <img src={Photoshop} alt="Photoshop Logo" loading="lazy" />
+                </li>
+                <li>
+                  <img src={wordpress} alt="wordpress Logo" loading="lazy" />
+                </li>
+                <li>
+                  <img src={Canva} alt="Canva Logo" loading="lazy" />
+                </li>
+              </ul>
+              <p>
+                <b>{props.cases[specificCase].caseName}</b> - Samme hjælp,
+                men med et nyt look!💆
+              </p>
+            </span>
+            <section className="Grid Hover">
+              <div>
+                <a href="https://sundhedssupport.dk" target="_blank">
+                  <img
+                    className="MediumSize NotDisapear"
+                    src={DesktopMockupBot_SundhedsSupport}
+                    alt={DesktopMockupBot_SundhedsSupport}
+                    loading="lazy"
+                  />
+                  <img
+                    className="MediumSize Disapear"
+                    src={DesktopMockupTop_SundhedsSupport}
+                    alt={DesktopMockupTop_SundhedsSupport}
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+            </section>
 
+            <ul>
+              <li>
+                <b> Tidslinje:</b> 4 uger, 2023.
+              </li>
+              <li>
+                <b>Kunde:</b> Arbejdspraktik hos SundhedSupport.
+              </li>
+              <li>
+                <b>Udfordringer:</b> Research, Rebranding, Marketing, Typografi, Layout, SoMe, kodning,
+                Deadline.
+              </li>
+            </ul>
+            <span>
+              <h4>Facebook banner</h4>
+              <hr />
+              <span>
+                <section className="Grid">
+                  <img
+                    src={FacebookMockup_SundhedsSupport}
+                    alt={FacebookMockup_SundhedsSupport}
+                    loading="lazy"
+                    onClick={() => handleClickW(FacebookMockup_SundhedsSupport)}
+                  />
+                </section>
+              </span>
+            </span>
+
+            <span>
+              <h4>Brochure</h4>
+              <hr />
+              <span>
+                <section className="Grid">
+                  <img
+                    src={BrochureFront_SundhedsSupport}
+                    alt={BrochureFront_SundhedsSupport}
+                    loading="lazy"
+                    onClick={() => handleClickW(BrochureFront_SundhedsSupport)}
+                  />
+                </section>
+                <section className="Grid">
+                  <img
+                    src={BrochureBack_SundhedsSupport}
+                    alt={BrochureBack_SundhedsSupport}
+                    loading="lazy"
+                    onClick={() => handleClickW(BrochureBack_SundhedsSupport)}
+                  />
+                </section>
+              </span>
+            </span>
+
+            <span>
+              <h4>Visitkort</h4>
+              <hr />
+              <span>
+                <section className="Grid">
+                  <img
+                    src={Businesscard_SundhedsSupport}
+                    alt={Businesscard_SundhedsSupport}
+                    loading="lazy"
+                    onClick={() => handleClickW(Businesscard_SundhedsSupport)}
+                  />
+                </section>
               </span>
             </span>
 
           </article>
         </main>
       ) : null}
-
     </section>
   );
 };

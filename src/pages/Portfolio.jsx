@@ -5,6 +5,7 @@ import Ban_Baba from "../assets/img/products/BabaEnergy/Banners_BabaEnergy.jpg";
 import Ban_Spring from "../assets/img/products/Springeren/Banners_Springeren.jpg";
 import Ban_Skagen from "../assets/img/products/Skagen/Banners_Skagen.jpg";
 import Ban_Hjerte from "../assets/img/products/Hjerte/Banners_Hjerte.jpg";
+import Ban_SundhedsSupport from "../assets/img/products/SundhedsSupport/Banners_SundhedsSupport.jpg";
 
 
 export const Portfolio = (props) => {
@@ -32,7 +33,7 @@ export const Portfolio = (props) => {
         </NavLink>
 
         <NavLink to={`${props.cases[4].url}`}>
-        <img src={Ban_Hjerte} alt="Hjerte banner" loading="lazy"/>
+        <img src={Ban_SundhedsSupport} alt="SundhedsSupport banner" loading="lazy"/>
         </NavLink>
 
 
