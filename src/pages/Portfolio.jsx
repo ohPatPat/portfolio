@@ -6,6 +6,7 @@ import Ban_Spring from "../assets/img/products/Springeren/Banners_Springeren.jpg
 import Ban_Skagen from "../assets/img/products/Skagen/Banners_Skagen.jpg";
 import Ban_Hjerte from "../assets/img/products/Hjerte/Banners_Hjerte.jpg";
 import Ban_SundhedsSupport from "../assets/img/products/SundhedsSupport/Banners_SundhedsSupport.jpg";
+import Ban_PatiaWorkshop from "../assets/img/products/PatiaWorkshop/Banners_PatiaWorkshop.jpg";
 
 
 export const Portfolio = (props) => {
@@ -36,6 +37,9 @@ export const Portfolio = (props) => {
         <img src={Ban_SundhedsSupport} alt="SundhedsSupport banner" loading="lazy"/>
         </NavLink>
 
+        <NavLink to={`${props.cases[5].url}`}>
+        <img src={Ban_PatiaWorkshop} alt="Patia Workshop banner" loading="lazy"/>
+        </NavLink>
 
         <article>
           <p>

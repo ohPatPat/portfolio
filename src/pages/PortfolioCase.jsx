@@ -6,6 +6,7 @@ import Indesign from "../assets/img/icons/Icons_Indesign.svg";
 import Photoshop from "../assets/img/icons/Icons_Photoshop.svg";
 import wordpress from "../assets/img/icons/Icons_Wordpress.svg";
 import Canva from "../assets/img/icons/Icons_Canva.svg";
+import Vscode from "../assets/img/icons/Icons_Vscode.svg";
 
 // BabaEnergy pics
 import Ban_Baba from "../assets/img/products/BabaEnergy/Banners_BabaEnergy.jpg";
@@ -83,6 +84,22 @@ import BrochureFront_SundhedsSupport from "../assets/img/products/SundhedsSuppor
 import BrochureBack_SundhedsSupport from "../assets/img/products/SundhedsSupport/BrochureBack_SundhedsSupport.png";
 import Businesscard_SundhedsSupport from "../assets/img/products/SundhedsSupport/Businesscard_SundhedsSupport.png";
 
+//PatiaWorkshop
+import Ban_PatiaWorkshop from "../assets/img/products/PatiaWorkshop/Banners_PatiaWorkshop.jpg";
+import Patia_DesktopMockup from "../assets/img/products/PatiaWorkshop/Patia_DesktopMockup.png";
+import Patia_DesktopMockup2 from "../assets/img/products/PatiaWorkshop/Patia_DesktopMockup2.png";
+
+import Patia_PhoneMockup from "../assets/img/products/PatiaWorkshop/Patia_PhoneMockup.png";
+import Patia_PhoneMockup2 from "../assets/img/products/PatiaWorkshop/Patia_PhoneMockup2.png";
+import Patia_PhoneMockup3 from "../assets/img/products/PatiaWorkshop/Patia_PhoneMockup3.png";
+import Patia_PhoneMockup4 from "../assets/img/products/PatiaWorkshop/Patia_PhoneMockup4.png";
+
+import SekigetsuYukiLogoV2 from "../assets/img/products/PatiaWorkshop/SekigetsuYukiLogoV2.png";
+import EllenOverlaysWaterMark from "../assets/img/products/PatiaWorkshop/EllenOverlaysWaterMark.png";
+import ZukiiOverlaysWaterMark from "../assets/img/products/PatiaWorkshop/ZukiiOverlaysWaterMark.png";
+import JuninyaOverlaysWaterMark from "../assets/img/products/PatiaWorkshop/JuninyaOverlaysWaterMark.png";
+
+
 export const PortfolioCase = (props) => {
   let [specificCase, setspecificCase] = useState(0);
   const [imageSrc, setImageSrc] = useState("");
@@ -120,6 +137,10 @@ export const PortfolioCase = (props) => {
       case "/portfolio/SundhedsSupport":
         setspecificCase(4);
         break;
+      case "/portfolio/PatiaWorkshop":
+        setspecificCase(5);
+        break;
+
       default:
         setspecificCase(null);
         break;
@@ -131,7 +152,7 @@ export const PortfolioCase = (props) => {
     if (isLargeScreen) {
       setImageSrc(src);
       setIsModalOpenH(true);
-      setPrevScrollPos(window.pageYOffset);
+      setPrevScrollPos(window.scrollY);
     }
   };
 
@@ -139,9 +160,11 @@ export const PortfolioCase = (props) => {
     if (isLargeScreen) {
       setImageSrc(src);
       setIsModalOpenW(true);
-      setPrevScrollPos(window.pageYOffset);
+      setPrevScrollPos(window.scrollY);
     }
   };
+
+  console.log(imageSrc);
 
   // function to close the modal
   const handleClose = () => {
@@ -519,7 +542,7 @@ export const PortfolioCase = (props) => {
               </ul>
               <p>
                 <b>{props.cases[specificCase].caseName}</b> - Gamle historier i
-                en moderne pakke.
+                en moderne pakke. 🖼️
               </p>
             </span>
             <section className="Grid Hover">
@@ -627,7 +650,7 @@ export const PortfolioCase = (props) => {
               </ul>
               <p>
                 <b>{props.cases[specificCase].caseName}</b> - Hjælper mænd med
-                at se, seriøsiteten i et større billede.
+                at se, seriøsiteten i et større billede. ❤️
               </p>
             </span>
             <section className="Grid Hover">
@@ -760,13 +783,13 @@ export const PortfolioCase = (props) => {
                 </li>
               </ul>
               <p>
-                <b>{props.cases[specificCase].caseName}</b> - Samme hjælp,
-                men med et nyt look!💆
+                <b>{props.cases[specificCase].caseName}</b> - Samme hjælp, men
+                med et nyt look!💆
               </p>
             </span>
             <section className="Grid Hover">
               <div>
-                <a href="https://sundhedssupport.dk" target="_blank">
+                <a href="https://sundhedssupport.dk" target="_blank" rel="noreferrer">
                   <img
                     className="MediumSize NotDisapear"
                     src={DesktopMockupBot_SundhedsSupport}
@@ -791,8 +814,8 @@ export const PortfolioCase = (props) => {
                 <b>Kunde:</b> Arbejdspraktik hos SundhedSupport.
               </li>
               <li>
-                <b>Udfordringer:</b> Research, Rebranding, Marketing, Typografi, Layout, SoMe, kodning,
-                Deadline.
+                <b>Udfordringer:</b> Research, Rebranding, Marketing, Typografi,
+                Layout, SoMe, kodning, Deadline.
               </li>
             </ul>
             <span>
@@ -821,8 +844,6 @@ export const PortfolioCase = (props) => {
                     loading="lazy"
                     onClick={() => handleClickW(BrochureFront_SundhedsSupport)}
                   />
-                </section>
-                <section className="Grid">
                   <img
                     src={BrochureBack_SundhedsSupport}
                     alt={BrochureBack_SundhedsSupport}
@@ -843,6 +864,135 @@ export const PortfolioCase = (props) => {
                     alt={Businesscard_SundhedsSupport}
                     loading="lazy"
                     onClick={() => handleClickW(Businesscard_SundhedsSupport)}
+                  />
+                </section>
+              </span>
+            </span>
+          </article>
+        </main>
+      ) : null}
+      {specificCase === 5 ? (
+        <main>
+          <img
+            src={Ban_PatiaWorkshop}
+            alt="Patia Workshop banner"
+            loading="lazy"
+          />
+          <h1>{`- ${props.cases[specificCase].caseName} - `}</h1>
+          <article>
+            <span>
+              <h3>Info</h3>
+              <hr />
+              <ul className="Apps">
+                <li>
+                  <img src={Vscode} alt="Vscode Logo" loading="lazy" />
+                </li>
+                <li>
+                  <img
+                    src={Illustrator}
+                    alt="Illustrator Logo"
+                    loading="lazy"
+                  />
+                </li>
+              </ul>
+              <p>
+                <b>{props.cases[specificCase].caseName}</b> - Unikt
+                "Mobile-First" porfolio 📱
+              </p>
+            </span>
+            <section className="Grid Hover">
+              <div>
+                <a href="https://patiaworkshop.com" target="_blank" rel="noreferrer">
+                  <img
+                    className="MediumSize NotDisapear"
+                    src={Patia_DesktopMockup2}
+                    alt={Patia_DesktopMockup2}
+                    loading="lazy"
+                  />
+                  <img
+                    className="MediumSize Disapear"
+                    src={Patia_DesktopMockup}
+                    alt={Patia_DesktopMockup}
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+            </section>
+
+            <ul>
+              <li>
+                <b> Tidslinje:</b> 2 måneder, 2023.
+              </li>
+              <li>
+                <b>Kunde:</b> Personlig projekt.
+              </li>
+              <li>
+                <b>Udfordringer:</b> Kodning - React, Html, scss.
+              </li>
+            </ul>
+            <span>
+              <h4>Mobil</h4>
+              <hr />
+              <span>
+                <section className="Grid Grid2">
+                  <img
+                    src={Patia_PhoneMockup}
+                    alt={Patia_PhoneMockup}
+                    loading="lazy"
+                    onClick={() => handleClickW(Patia_PhoneMockup)}
+                  />
+                  <img
+                    src={Patia_PhoneMockup2}
+                    alt={Patia_PhoneMockup2}
+                    loading="lazy"
+                    onClick={() => handleClickW(Patia_PhoneMockup2)}
+                  />
+                  <img
+                    src={Patia_PhoneMockup3}
+                    alt={Patia_PhoneMockup3}
+                    loading="lazy"
+                    onClick={() => handleClickW(Patia_PhoneMockup3)}
+                  />
+                  <img
+                    src={Patia_PhoneMockup4}
+                    alt={Patia_PhoneMockup4}
+                    loading="lazy"
+                    onClick={() => handleClickW(Patia_PhoneMockup4)}
+                  />
+                </section>
+              </span>
+            </span>
+
+            <span>
+              <h4>Produkter fra PatiaWorkshop.com</h4>
+              <hr />
+              <span>
+                <section className="Grid">
+                  <img
+                    src={SekigetsuYukiLogoV2}
+                    alt={SekigetsuYukiLogoV2}
+                    loading="lazy"
+                    onClick={() => handleClickW(SekigetsuYukiLogoV2)}
+                  />
+                </section>
+                <section className="Grid Grid3">
+                  <img
+                    src={EllenOverlaysWaterMark}
+                    alt={EllenOverlaysWaterMark}
+                    loading="lazy"
+                    onClick={() => handleClickW(EllenOverlaysWaterMark)}
+                  />
+                                    <img
+                    src={ZukiiOverlaysWaterMark}
+                    alt={ZukiiOverlaysWaterMark}
+                    loading="lazy"
+                    onClick={() => handleClickW(ZukiiOverlaysWaterMark)}
+                  />
+                  <img
+                    src={JuninyaOverlaysWaterMark}
+                    alt={JuninyaOverlaysWaterMark}
+                    loading="lazy"
+                    onClick={() => handleClickW(JuninyaOverlaysWaterMark)}
                   />
                 </section>
               </span>
