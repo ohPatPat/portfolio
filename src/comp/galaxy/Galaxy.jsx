@@ -1,5 +1,5 @@
-import PatPic from "../../assets/img/deco/PatPic.jpg";
-import PDF from "../../assets/img/PatrikDahl.pdf";
+import PatPic from "../../assets/img/deco/PatPic.webp";
+import PDF from "../../assets/img/PatrikDahl CV.pdf";
 export const Galaxy = () => {
 
   return (

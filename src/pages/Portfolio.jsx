@@ -1,12 +1,12 @@
 import { MetaTags } from "../comp/MetaTags.jsx";
 import { NavLink } from "react-router-dom";
 
-import Ban_Baba from "../assets/img/products/BabaEnergy/Banners_BabaEnergy.jpg";
-import Ban_Spring from "../assets/img/products/Springeren/Banners_Springeren.jpg";
-import Ban_Skagen from "../assets/img/products/Skagen/Banners_Skagen.jpg";
-import Ban_Hjerte from "../assets/img/products/Hjerte/Banners_Hjerte.jpg";
-import Ban_SundhedsSupport from "../assets/img/products/SundhedsSupport/Banners_SundhedsSupport.jpg";
-import Ban_PatiaWorkshop from "../assets/img/products/PatiaWorkshop/Banners_PatiaWorkshop.jpg";
+import Ban_Baba from "../assets/img/products/BabaEnergy/Banners_BabaEnergy.webp";
+import Ban_Spring from "../assets/img/products/Springeren/Banners_Springeren.webp";
+import Ban_Skagen from "../assets/img/products/Skagen/Banners_Skagen.webp";
+import Ban_Hjerte from "../assets/img/products/Hjerte/Banners_Hjerte.webp";
+import Ban_SundhedsSupport from "../assets/img/products/SundhedsSupport/Banners_SundhedsSupport.webp";
+import Ban_PatiaWorkshop from "../assets/img/products/PatiaWorkshop/Banners_PatiaWorkshop.webp";
 
 
 export const Portfolio = (props) => {

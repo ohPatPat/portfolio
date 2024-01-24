@@ -9,95 +9,95 @@ import Canva from "../assets/img/icons/Icons_Canva.svg";
 import Vscode from "../assets/img/icons/Icons_Vscode.svg";
 
 // BabaEnergy pics
-import Ban_Baba from "../assets/img/products/BabaEnergy/Banners_BabaEnergy.jpg";
-import GreenCan from "../assets/img/products/BabaEnergy/3 cans Mockup Matcha.jpg";
-import PinkCan from "../assets/img/products/BabaEnergy/3 cans Mockup Strawberry.jpg";
-import OrengeCan from "../assets/img/products/BabaEnergy/3 cans Mockup Orange.jpg";
-import GreenClosed from "../assets/img/products/BabaEnergy/Matroska_GreenClosed.jpg";
-import GreenOpen from "../assets/img/products/BabaEnergy/Matroska_GreenOpen.jpg";
-import PinkClosed from "../assets/img/products/BabaEnergy/Matroska_PinkClosed.jpg";
-import PinkOpen from "../assets/img/products/BabaEnergy/Matroska_PinkOpen.jpg";
-import OrengeClosed from "../assets/img/products/BabaEnergy/Matroska_OrengeClosed.jpg";
-import OrengeOpen from "../assets/img/products/BabaEnergy/Matroska_OrengeOpen.jpg";
-import GreenSticker from "../assets/img/products/BabaEnergy/Matroska Matcha.jpg";
-import PinkSticker from "../assets/img/products/BabaEnergy/Matroska Strawberry.jpg";
-import OrengeSticker from "../assets/img/products/BabaEnergy/Matroska Orange.jpg";
-import GreenDieLineFront from "../assets/img/products/BabaEnergy/Matroska 4pack Dieline_Green.jpg";
-import PinkDieLineFront from "../assets/img/products/BabaEnergy/Matroska 4pack Dieline_Pink.jpg";
-import OrengeDieLineFront from "../assets/img/products/BabaEnergy/Matroska 4pack Dieline_Orenge.jpg";
-import BrainStorm from "../assets/img/products/BabaEnergy/Screenshot1.png";
+import Ban_Baba from "../assets/img/products/BabaEnergy/Banners_BabaEnergy.webp";
+import GreenCan from "../assets/img/products/BabaEnergy/3 cans Mockup Matcha.webp";
+import PinkCan from "../assets/img/products/BabaEnergy/3 cans Mockup Strawberry.webp";
+import OrengeCan from "../assets/img/products/BabaEnergy/3 cans Mockup Orange.webp";
+import GreenClosed from "../assets/img/products/BabaEnergy/Matroska_GreenClosed.webp";
+import GreenOpen from "../assets/img/products/BabaEnergy/Matroska_GreenOpen.webp";
+import PinkClosed from "../assets/img/products/BabaEnergy/Matroska_PinkClosed.webp";
+import PinkOpen from "../assets/img/products/BabaEnergy/Matroska_PinkOpen.webp";
+import OrengeClosed from "../assets/img/products/BabaEnergy/Matroska_OrengeClosed.webp";
+import OrengeOpen from "../assets/img/products/BabaEnergy/Matroska_OrengeOpen.webp";
+import GreenSticker from "../assets/img/products/BabaEnergy/Matroska Matcha.webp";
+import PinkSticker from "../assets/img/products/BabaEnergy/Matroska Strawberry.webp";
+import OrengeSticker from "../assets/img/products/BabaEnergy/Matroska Orange.webp";
+import GreenDieLineFront from "../assets/img/products/BabaEnergy/Matroska 4pack Dieline_Green.webp";
+import PinkDieLineFront from "../assets/img/products/BabaEnergy/Matroska 4pack Dieline_Pink.webp";
+import OrengeDieLineFront from "../assets/img/products/BabaEnergy/Matroska 4pack Dieline_Orenge.webp";
+import BrainStorm from "../assets/img/products/BabaEnergy/Screenshot1.webp";
 
 // Springeren
-import Ban_Spring from "../assets/img/products/Springeren/Banners_Springeren.jpg";
-import TicketFront from "../assets/img/products/Springeren/GoldingTicketFront.png";
-import TicketBack from "../assets/img/products/Springeren/GoldingTicketBack.png";
-import Mockup from "../assets/img/products/Springeren/Springeren_Mockup2023.jpg";
-import Ticket1 from "../assets/img/products/Springeren/Ticket1.jpg";
-import Ticket2 from "../assets/img/products/Springeren/Ticket2.jpg";
-import FolderBack from "../assets/img/products/Springeren/FolderBack.jpg";
-import Moodboard from "../assets/img/products/Springeren/Screenshot 2023-03-09 054603.png";
+import Ban_Spring from "../assets/img/products/Springeren/Banners_Springeren.webp";
+import TicketFront from "../assets/img/products/Springeren/GoldingTicketFront.webp";
+import TicketBack from "../assets/img/products/Springeren/GoldingTicketBack.webp";
+import Mockup from "../assets/img/products/Springeren/Springeren_Mockup2023.webp";
+import Ticket1 from "../assets/img/products/Springeren/Ticket1.webp";
+import Ticket2 from "../assets/img/products/Springeren/Ticket2.webp";
+import FolderBack from "../assets/img/products/Springeren/FolderBack.webp";
+import Moodboard from "../assets/img/products/Springeren/Screenshot 2023-03-09 054603.webp";
 
 // Skagen
-import Ban_Skagen from "../assets/img/products/Skagen/Banners_Skagen.jpg";
-import MockupClosed from "../assets/img/products/Skagen/MockupClosed.jpg";
-import MockupOpen from "../assets/img/products/Skagen/MockupOpen.jpg";
+import Ban_Skagen from "../assets/img/products/Skagen/Banners_Skagen.webp";
+import MockupClosed from "../assets/img/products/Skagen/MockupClosed.webp";
+import MockupOpen from "../assets/img/products/Skagen/MockupOpen.webp";
 
-import MockupPages1 from "../assets/img/products/Skagen/MockupPages_1.png";
-import MockupPages2 from "../assets/img/products/Skagen/MockupPages_2.png";
-import MockupPages3 from "../assets/img/products/Skagen/MockupPages_3.png";
-import MockupPages4 from "../assets/img/products/Skagen/MockupPages_4.png";
-import MockupPages5 from "../assets/img/products/Skagen/MockupPages_5.png";
-import MockupPages6 from "../assets/img/products/Skagen/MockupPages_6.png";
-import MockupPages7 from "../assets/img/products/Skagen/MockupPages_7.png";
-import MockupPages8 from "../assets/img/products/Skagen/MockupPages_8.png";
+import MockupPages1 from "../assets/img/products/Skagen/MockupPages_1.webp";
+import MockupPages2 from "../assets/img/products/Skagen/MockupPages_2.webp";
+import MockupPages3 from "../assets/img/products/Skagen/MockupPages_3.webp";
+import MockupPages4 from "../assets/img/products/Skagen/MockupPages_4.webp";
+import MockupPages5 from "../assets/img/products/Skagen/MockupPages_5.webp";
+import MockupPages6 from "../assets/img/products/Skagen/MockupPages_6.webp";
+import MockupPages7 from "../assets/img/products/Skagen/MockupPages_7.webp";
+import MockupPages8 from "../assets/img/products/Skagen/MockupPages_8.webp";
 
-import Skagen_brochure1 from "../assets/img/products/Skagen/Skagen_brochure1.jpg";
-import Skagen_brochure2 from "../assets/img/products/Skagen/Skagen_brochure2.jpg";
-import Skagen_brochure3 from "../assets/img/products/Skagen/Skagen_brochure3.jpg";
-import Skagen_brochure4 from "../assets/img/products/Skagen/Skagen_brochure4.jpg";
-import Skagen_brochure5 from "../assets/img/products/Skagen/Skagen_brochure5.jpg";
-import Skagen_brochure6 from "../assets/img/products/Skagen/Skagen_brochure6.jpg";
-import Skagen_brochure7 from "../assets/img/products/Skagen/Skagen_brochure7.jpg";
-import Skagen_brochure8 from "../assets/img/products/Skagen/Skagen_brochure8.jpg";
+import Skagen_brochure1 from "../assets/img/products/Skagen/Skagen_brochure1.webp";
+import Skagen_brochure2 from "../assets/img/products/Skagen/Skagen_brochure2.webp";
+import Skagen_brochure3 from "../assets/img/products/Skagen/Skagen_brochure3.webp";
+import Skagen_brochure4 from "../assets/img/products/Skagen/Skagen_brochure4.webp";
+import Skagen_brochure5 from "../assets/img/products/Skagen/Skagen_brochure5.webp";
+import Skagen_brochure6 from "../assets/img/products/Skagen/Skagen_brochure6.webp";
+import Skagen_brochure7 from "../assets/img/products/Skagen/Skagen_brochure7.webp";
+import Skagen_brochure8 from "../assets/img/products/Skagen/Skagen_brochure8.webp";
 
 // Hjerte
-import Ban_Hjerte from "../assets/img/products/Hjerte/Banners_Hjerte.jpg";
-import BusMockup from "../assets/img/products/Hjerte/BusMockup.png";
-import BusMockup_Finished from "../assets/img/products/Hjerte/Billed 2.jpg";
+import Ban_Hjerte from "../assets/img/products/Hjerte/Banners_Hjerte.webp";
+import BusMockup from "../assets/img/products/Hjerte/BusMockup.webp";
+import BusMockup_Finished from "../assets/img/products/Hjerte/Billed 2.webp";
 
-import Fishing from "../assets/img/products/Hjerte/Fishing.png";
-import Horse from "../assets/img/products/Hjerte/Horse.png";
-import Road from "../assets/img/products/Hjerte/Road.png";
+import Fishing from "../assets/img/products/Hjerte/Fishing.webp";
+import Horse from "../assets/img/products/Hjerte/Horse.webp";
+import Road from "../assets/img/products/Hjerte/Road.webp";
 
-import Instagram_post from "../assets/img/products/Hjerte/Instagram post.jpg";
-import InstaMockup1 from "../assets/img/products/Hjerte/InstaMockup1.png";
-import InstaMockup2 from "../assets/img/products/Hjerte/InstaMockup2.png";
-import InstaMockup3 from "../assets/img/products/Hjerte/InstaMockup3.png";
+import Instagram_post from "../assets/img/products/Hjerte/Instagram post.webp";
+import InstaMockup1 from "../assets/img/products/Hjerte/InstaMockup1.webp";
+import InstaMockup2 from "../assets/img/products/Hjerte/InstaMockup2.webp";
+import InstaMockup3 from "../assets/img/products/Hjerte/InstaMockup3.webp";
 
 //SundhedsSupport
-import Ban_SundhedsSupport from "../assets/img/products/SundhedsSupport/Banners_SundhedsSupport.jpg";
-import DesktopMockupTop_SundhedsSupport from "../assets/img/products/SundhedsSupport/DesktopMockupTop-SundhedsSupport.png";
-import DesktopMockupBot_SundhedsSupport from "../assets/img/products/SundhedsSupport/DesktopMockupBot-SundhedsSupport.png";
-import FacebookMockup_SundhedsSupport from "../assets/img/products/SundhedsSupport/FacebookMockup-SundhedsSupport.png";
+import Ban_SundhedsSupport from "../assets/img/products/SundhedsSupport/Banners_SundhedsSupport.webp";
+import DesktopMockupTop_SundhedsSupport from "../assets/img/products/SundhedsSupport/DesktopMockupTop-SundhedsSupport.webp";
+import DesktopMockupBot_SundhedsSupport from "../assets/img/products/SundhedsSupport/DesktopMockupBot-SundhedsSupport.webp";
+import FacebookMockup_SundhedsSupport from "../assets/img/products/SundhedsSupport/FacebookMockup-SundhedsSupport.webp";
 
-import BrochureFront_SundhedsSupport from "../assets/img/products/SundhedsSupport/BrochureFront_SundhedsSupport.png";
-import BrochureBack_SundhedsSupport from "../assets/img/products/SundhedsSupport/BrochureBack_SundhedsSupport.png";
-import Businesscard_SundhedsSupport from "../assets/img/products/SundhedsSupport/Businesscard_SundhedsSupport.png";
+import BrochureFront_SundhedsSupport from "../assets/img/products/SundhedsSupport/BrochureFront_SundhedsSupport.webp";
+import BrochureBack_SundhedsSupport from "../assets/img/products/SundhedsSupport/BrochureBack_SundhedsSupport.webp";
+import Businesscard_SundhedsSupport from "../assets/img/products/SundhedsSupport/Businesscard_SundhedsSupport.webp";
 
 //PatiaWorkshop
-import Ban_PatiaWorkshop from "../assets/img/products/PatiaWorkshop/Banners_PatiaWorkshop.jpg";
-import Patia_DesktopMockup from "../assets/img/products/PatiaWorkshop/Patia_DesktopMockup.png";
-import Patia_DesktopMockup2 from "../assets/img/products/PatiaWorkshop/Patia_DesktopMockup2.png";
+import Ban_PatiaWorkshop from "../assets/img/products/PatiaWorkshop/Banners_PatiaWorkshop.webp";
+import Patia_DesktopMockup from "../assets/img/products/PatiaWorkshop/Patia_DesktopMockup.webp";
+import Patia_DesktopMockup2 from "../assets/img/products/PatiaWorkshop/Patia_DesktopMockup2.webp";
 
-import Patia_PhoneMockup from "../assets/img/products/PatiaWorkshop/Patia_PhoneMockup.png";
-import Patia_PhoneMockup2 from "../assets/img/products/PatiaWorkshop/Patia_PhoneMockup2.png";
-import Patia_PhoneMockup3 from "../assets/img/products/PatiaWorkshop/Patia_PhoneMockup3.png";
-import Patia_PhoneMockup4 from "../assets/img/products/PatiaWorkshop/Patia_PhoneMockup4.png";
+import Patia_PhoneMockup from "../assets/img/products/PatiaWorkshop/Patia_PhoneMockup.webp";
+import Patia_PhoneMockup2 from "../assets/img/products/PatiaWorkshop/Patia_PhoneMockup2.webp";
+import Patia_PhoneMockup3 from "../assets/img/products/PatiaWorkshop/Patia_PhoneMockup3.webp";
+import Patia_PhoneMockup4 from "../assets/img/products/PatiaWorkshop/Patia_PhoneMockup4.webp";
 
-import SekigetsuYukiLogoV2 from "../assets/img/products/PatiaWorkshop/SekigetsuYukiLogoV2.png";
-import EllenOverlaysWaterMark from "../assets/img/products/PatiaWorkshop/EllenOverlaysWaterMark.png";
-import ZukiiOverlaysWaterMark from "../assets/img/products/PatiaWorkshop/ZukiiOverlaysWaterMark.png";
-import JuninyaOverlaysWaterMark from "../assets/img/products/PatiaWorkshop/JuninyaOverlaysWaterMark.png";
+import SekigetsuYukiLogoV2 from "../assets/img/products/PatiaWorkshop/SekigetsuYukiLogoV2.webp";
+import EllenOverlaysWaterMark from "../assets/img/products/PatiaWorkshop/EllenOverlaysWaterMark.webp";
+import ZukiiOverlaysWaterMark from "../assets/img/products/PatiaWorkshop/ZukiiOverlaysWaterMark.webp";
+import JuninyaOverlaysWaterMark from "../assets/img/products/PatiaWorkshop/JuninyaOverlaysWaterMark.webp";
 
 
 export const PortfolioCase = (props) => {
@@ -110,7 +110,7 @@ export const PortfolioCase = (props) => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsLargeScreen(window.innerWidth > 767);
+      setIsLargeScreen(window.innerWidth > 1100);
     };
     handleResize();
     window.addEventListener("resize", handleResize);

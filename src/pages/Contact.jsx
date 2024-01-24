@@ -249,6 +249,7 @@ export const Contact = (props) => {
               </button>
               {/* <div id="Show" > */}
               <div id={submitMessage ? "Show" : "noShow"}>
+              {/* <div id={submitMessage ? "noShow" : "Show"}> */}
                 <div></div>
                 <div></div>
 
