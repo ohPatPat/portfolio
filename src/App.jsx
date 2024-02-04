@@ -9,6 +9,7 @@ import "./App.scss";
 import { useEffect } from "react";
 import { PageAnimation } from "./comp/PageAnimation.jsx";
 import { Header } from "./comp/header/Header";
+import { UpButton } from "./comp/header/Navigation.jsx";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Error } from "./pages/Error";
@@ -49,6 +50,10 @@ let PortfolioInfo = [
     caseName: "PatiaWorkshop.com",
     url: "PatiaWorkshop",
   },
+  {
+    caseName: "ArtursPirazkov.dk",
+    url: "ArtursPirazkov",
+  },
 ];
 
 function App() {
@@ -88,8 +93,9 @@ function App() {
             path="/contact"
             element={<Contact title={"Patrik Dahl  | Kontakt"} />}
           />
-          {/* <Route path="*" element={<Error title={"Patrik Dahl  | 🤔"} />} /> */}
+          <Route path="*" element={<Error title={"Patrik Dahl  | 🤔"} />} />
         </Routes>
+        <UpButton />
       </Router>
     </>
   );

@@ -4,9 +4,10 @@ import React, { useState, useEffect } from "react";
 import Illustrator from "../assets/img/icons/Icons_Illustrator.svg";
 import Indesign from "../assets/img/icons/Icons_Indesign.svg";
 import Photoshop from "../assets/img/icons/Icons_Photoshop.svg";
-import wordpress from "../assets/img/icons/Icons_Wordpress.svg";
+import wordpress from "../assets/img/icons/Icons_WordPress.svg";
 import Canva from "../assets/img/icons/Icons_Canva.svg";
 import Vscode from "../assets/img/icons/Icons_Vscode.svg";
+import Camera from "../assets/img/icons/Icons_Camera.svg";
 
 // BabaEnergy pics
 import Ban_Baba from "../assets/img/products/BabaEnergy/Banners_BabaEnergy.webp";
@@ -99,6 +100,15 @@ import EllenOverlaysWaterMark from "../assets/img/products/PatiaWorkshop/EllenOv
 import ZukiiOverlaysWaterMark from "../assets/img/products/PatiaWorkshop/ZukiiOverlaysWaterMark.webp";
 import JuninyaOverlaysWaterMark from "../assets/img/products/PatiaWorkshop/JuninyaOverlaysWaterMark.webp";
 
+//ArtursPirazkov
+import Ban_Arturs from "../assets/img/products/Arturs/Banners_Arturs.webp";
+import Arturs_DesktopMockup from "../assets/img/products/Arturs/Arturs_DesktopMockup.webp";
+import Arturs_DesktopMockup2 from "../assets/img/products/Arturs/Arturs_DesktopMockup2.webp";
+
+import Arturs_PhoneMockup from "../assets/img/products/Arturs/Arturs_PhoneMockup.webp";
+import Arturs_PhoneMockup2 from "../assets/img/products/Arturs/Arturs_PhoneMockup2.webp";
+import Arturs_Logo from "../assets/img/products/Arturs/Logo.webp";
+import Arturs_Workboard from "../assets/img/products/Arturs/Workboard.webp";
 
 export const PortfolioCase = (props) => {
   let [specificCase, setspecificCase] = useState(0);
@@ -139,6 +149,9 @@ export const PortfolioCase = (props) => {
         break;
       case "/portfolio/PatiaWorkshop":
         setspecificCase(5);
+        break;
+      case "/portfolio/ArtursPirazkov":
+        setspecificCase(6);
         break;
 
       default:
@@ -314,15 +327,22 @@ export const PortfolioCase = (props) => {
 
             <ul>
               <li>
-                <b> Tidslinje:</b> 4 Måneder, 2020
+                <b> Beskrivelse:</b> Et fiktivt svendeprøveprojekt, som jeg har
+                designet og udviklet helt fra bunden. Inspirationen hentede jeg
+                fra den måde, de flereste energidrikke er typisk markedsføret
+                til mænd. Derfor valgte jeg at gå i en modsat retning og tilføge
+                mere personligheder.
               </li>
               <li>
-                <b>Kunde:</b> Opdigtet projekt til min Svendeprøve
+                <b> Tidslinje:</b> 4 Måneder, 2020.
+              </li>
+              <li>
+                <b>Kunde:</b> Opdigtet projekt til min Svendeprøve.
               </li>
               <li>
                 <b>Udfordringer:</b> Konceptudvikling, Illostration, Marketing,
                 Branding, Karakterdesign, Logo Design, Typografi, Layout,
-                Emballagedesign, Dåse Design, Deadline
+                Emballagedesign, Dåse Design, Deadline.
               </li>
             </ul>
             <span>
@@ -428,10 +448,10 @@ export const PortfolioCase = (props) => {
                   />
                 </li>
                 <li>
-                  <img src={Photoshop} alt="Illustrator Logo" loading="lazy" />
+                  <img src={Photoshop} alt="Photoshop Logo" loading="lazy" />
                 </li>
                 <li>
-                  <p>📷</p>
+                  <img src={Camera} alt="Camera" loading="lazy" />
                 </li>
               </ul>
               <p>
@@ -461,16 +481,20 @@ export const PortfolioCase = (props) => {
 
             <ul>
               <li>
-                <b> Tidslinje:</b> 7 Uger, 2018
+                <b> Beskrivelse:</b> Rebranding af Springeren Maritimt
+                Oplevelsescenter og exempler på deres nye produkter.
+              </li>
+              <li>
+                <b> Tidslinje:</b> 7 Uger, 2018.
               </li>
               <li>
                 <b>Kunde:</b> Skole projekt - Samarbejde med Springeren Maritimt
-                Oplevelsescenter i Aalborg
+                Oplevelsescenter i Aalborg.
               </li>
               <li>
                 <b>Udfordringer:</b> Konceptudvikling, Fotografering,
                 Billedredigering, Marketing, Branding, Logo Design, Typografi,
-                Layout, Folder design, Deadline
+                Layout, Folder Design, Deadline.
               </li>
             </ul>
             <span>
@@ -537,7 +561,7 @@ export const PortfolioCase = (props) => {
                   <img src={Indesign} alt="Indesign Logo" loading="lazy" />
                 </li>
                 <li>
-                  <p>📷</p>
+                  <img src={Camera} alt="Camera" loading="lazy" />
                 </li>
               </ul>
               <p>
@@ -566,14 +590,18 @@ export const PortfolioCase = (props) => {
 
             <ul>
               <li>
-                <b> Tidslinje:</b> 7 Uger, 2018
+                <b> Beskrivelse:</b> En simpel og moderne, men funktionel
+                brochure.
               </li>
               <li>
-                <b>Kunde:</b> Skole projekt - Samarbejde med Skagens museum
+                <b> Tidslinje:</b> 7 Uger, 2018.
+              </li>
+              <li>
+                <b>Kunde:</b> Skole projekt - Samarbejde med Skagens Museum.
               </li>
               <li>
                 <b>Udfordringer:</b> Fotografering, Typografi, Layout, Printe,
-                Deadline
+                Deadline.
               </li>
             </ul>
             <span>
@@ -674,11 +702,21 @@ export const PortfolioCase = (props) => {
 
             <ul>
               <li>
+                <b> Beskrivelse:</b> En opgave, hvor jeg fik mulighed for at
+                udarbejde en reklamekampagne for Hjerteforeningen. Jeg
+                besluttede at skabe en række busreklamer, der sætter fokus på
+                mænd, som har udfordringer med at tage vare på sig selv. I
+                stedet for at negligere deres eget helbred, foreslår kampagnen,
+                at de bør tænke på deres familie. Dette budskab formidles gennem
+                "photobashing" og nogle slagkraftige overskrifter, hvor vi ser
+                børn, der savner deres fædre.
+              </li>
+              <li>
                 <b> Tidslinje:</b> 2 dage, 2020.
               </li>
               <li>
                 <b>Kunde:</b> Projekt Til Min Svendeprøve - Samarbejde med
-                Hjerte foreningen.
+                Hjerteforeningen.
               </li>
               <li>
                 <b>Udfordringer:</b> Konceptudvikling, Marketing,
@@ -789,7 +827,11 @@ export const PortfolioCase = (props) => {
             </span>
             <section className="Grid Hover">
               <div>
-                <a href="https://sundhedssupport.dk" target="_blank" rel="noreferrer">
+                <a
+                  href="https://sundhedssupport.dk"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
                     className="MediumSize NotDisapear"
                     src={DesktopMockupBot_SundhedsSupport}
@@ -807,6 +849,12 @@ export const PortfolioCase = (props) => {
             </section>
 
             <ul>
+              <li>
+                <b> Beskrivelse:</b> En 4 ugers arbejdspraktik hos
+                SundhedsSupport. hvor jeg havde muligheden for at hjælpe Inger
+                Viborg, med at rebrande hindes virksomhed med, at udarbejde nye
+                folder, visitkort, socialle medie og opdater hindes hjemmeside.
+              </li>
               <li>
                 <b> Tidslinje:</b> 4 uger, 2023.
               </li>
@@ -902,7 +950,11 @@ export const PortfolioCase = (props) => {
             </span>
             <section className="Grid Hover">
               <div>
-                <a href="https://patiaworkshop.com" target="_blank" rel="noreferrer">
+                <a
+                  href="https://patiaworkshop.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
                     className="MediumSize NotDisapear"
                     src={Patia_DesktopMockup2}
@@ -921,13 +973,16 @@ export const PortfolioCase = (props) => {
 
             <ul>
               <li>
+                <b> Beskrivelse:</b> Patiaworkshop er en portefølje designet til mine grafikprojekter for YouTubere og streamere. Det er en "Mobil-First" hjemmeside, da 80% af internetbrugerne anvender deres mobiltelefoner til at gå på internettet.
+              </li>
+              <li>
                 <b> Tidslinje:</b> 2 måneder, 2023.
               </li>
               <li>
                 <b>Kunde:</b> Personlig projekt.
               </li>
               <li>
-                <b>Udfordringer:</b> Kodning - React, Html, scss.
+                <b>Udfordringer:</b> Kodning - React, Html, Scss.
               </li>
             </ul>
             <span>
@@ -982,7 +1037,7 @@ export const PortfolioCase = (props) => {
                     loading="lazy"
                     onClick={() => handleClickW(EllenOverlaysWaterMark)}
                   />
-                                    <img
+                  <img
                     src={ZukiiOverlaysWaterMark}
                     alt={ZukiiOverlaysWaterMark}
                     loading="lazy"
@@ -997,7 +1052,122 @@ export const PortfolioCase = (props) => {
                 </section>
               </span>
             </span>
+          </article>
+        </main>
+      ) : null}
+      {specificCase === 6 ? (
+        <main>
+          <img src={Ban_Arturs} alt="Arturs Pirazkov banner" loading="lazy" />
+          <h1>{`- ${props.cases[specificCase].caseName} - `}</h1>
+          <article>
+            <span>
+              <h3>Info</h3>
+              <hr />
+              <ul className="Apps">
+                <li>
+                  <img src={Vscode} alt="Vscode Logo" loading="lazy" />
+                </li>
+                <li>
+                  <img
+                    src={Illustrator}
+                    alt="Illustrator Logo"
+                    loading="lazy"
+                  />
+                </li>
+              </ul>
+              <p>
+                <b>{props.cases[specificCase].caseName}</b> - En udenlandsk
+                fotograf med dansk kvalitet billeder 📷
+              </p>
+            </span>
+            <section className="Grid Hover">
+              <div>
+                <a
+                  href="https://arturspirazkov.dk"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    className="MediumSize NotDisapear"
+                    src={Arturs_DesktopMockup2}
+                    alt={Arturs_DesktopMockup2}
+                    loading="lazy"
+                  />
+                  <img
+                    className="MediumSize Disapear"
+                    src={Arturs_DesktopMockup}
+                    alt={Arturs_DesktopMockup}
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+            </section>
 
+            <ul>
+            <li>
+                <b> Beskrivelse:</b> En simpel "One Page" hjemmeside for en fotograf, komplet med et logo.
+              </li>
+              <li>
+                <b> Tidslinje:</b> 3 måneder, 2024.
+              </li>
+              <li>
+                <b>Kunde:</b> Arturs Pirazkov.
+              </li>
+              <li>
+                <b>Udfordringer:</b> Kundekontakt - Branding - Logo Design -
+                Layout - Kodning.
+              </li>
+            </ul>
+            <span>
+              <h4>Mobil</h4>
+              <hr />
+              <span>
+                <section className="Grid Grid2">
+                  <img
+                    src={Arturs_PhoneMockup}
+                    alt={Arturs_PhoneMockup}
+                    loading="lazy"
+                    onClick={() => handleClickW(Arturs_PhoneMockup)}
+                  />
+                  <img
+                    src={Arturs_PhoneMockup2}
+                    alt={Arturs_PhoneMockup2}
+                    loading="lazy"
+                    onClick={() => handleClickW(Arturs_PhoneMockup2)}
+                  />
+                </section>
+              </span>
+            </span>
+
+            <span>
+              <h4>Logo</h4>
+              <hr />
+              <span>
+                <section className="Grid">
+                  <img
+                    src={Arturs_Logo}
+                    alt={Arturs_Logo}
+                    loading="lazy"
+                    onClick={() => handleClickW(Arturs_Logo)}
+                  />
+                </section>
+              </span>
+            </span>
+
+            <span>
+              <h4>KONCEPTUDVIKLING</h4>
+              <hr />
+              <span>
+                <section className="Grid">
+                  <img
+                    src={Arturs_Workboard}
+                    alt={Arturs_Workboard}
+                    loading="lazy"
+                    onClick={() => handleClickW(Arturs_Workboard)}
+                  />
+                </section>
+              </span>
+            </span>
           </article>
         </main>
       ) : null}

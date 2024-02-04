@@ -61,3 +61,40 @@ export const BurgerMenu = () => {
     </>
   );
 };
+
+
+export const UpButton = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleScroll = () => {
+    const scrollTop = window.scrollY;
+    const threshold = 300; // Adjust this value based on when you want the button to appear
+
+    setIsVisible(scrollTop > threshold);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
+  React.useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return (
+    <button
+      className={`scroll-to-top-button ${isVisible ? 'visible' : ''}`}
+      onClick={scrollToTop}
+    >
+      OP
+    </button>
+  );
+};
+

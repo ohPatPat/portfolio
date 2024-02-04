@@ -20,7 +20,7 @@ export const Home = (props) => {
       <MetaTags title={props.title}></MetaTags>
       <main>
         <Galaxy />
-        <small> "For bedre brugeroplevelse anbefaler jeg, at ikke bruge Safari-browseren"</small>
+        <small> "For bedre brugeroplevelse anbefaler jeg, at ikke bruge <br /> Firefox eller Safari-browseren"</small>
       </main>
     </section>
   );
