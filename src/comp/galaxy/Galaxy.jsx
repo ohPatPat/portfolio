@@ -1,4 +1,4 @@
-import PatPic from "../../assets/img/deco/PatPic.webp";
+import PatPic from "../../assets/img/deco/Selfie_2025.webp";
 import PDF from "../../assets/img/PatrikDahl CV.pdf";
 export const Galaxy = () => {
 

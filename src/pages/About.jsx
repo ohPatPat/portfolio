@@ -126,7 +126,7 @@ export const About = (props) => {
               </ul>
             </div>
             <div>
-              <h2>Uddannelse</h2>
+              <h2>Uddannelser</h2>
               <hr />
               <ul className="NoFlex">
                 <li>
@@ -148,7 +148,7 @@ export const About = (props) => {
               </ul>
             </div>
             <div>
-              <h2>platforme</h2>
+              <h2>platformer</h2>
               <hr />
               <ul className="SocialLinks">
                 <li><a href="https://www.linkedin.com/in/ohpatrikdahl" target="_blank" rel="noopener noreferrer"><img src={LinkedIn} alt="LinkedIn Logo" /></a></li>
