@@ -481,8 +481,20 @@ export const PortfolioCase = (props) => {
 
             <ul>
               <li>
-                <b> Beskrivelse:</b> Rebranding af Springeren Maritimt
-                Oplevelsescenter og exempler på deres nye produkter.
+                <b> Beskrivelse:</b> Et skoleprojekt i samarbejde med Springeren
+                Maritimt Oplevelsescenter, hvor vi blev bedt om at udvikle nye
+                visuelle koncepter til museets identitet og kommunikation.
+                Projektets mål var at styrke museets visuelle udtryk og skabe
+                mere engagerende materiale til besøgende. <br />
+                <br /> Vores gruppe udviklede en ny folder og billetdesign med
+                fokus på branding, æstetik og brugeroplevelse. Løsningen
+                kombinerer maritime elementer, typografi og fotografi i et
+                enkelt og funktionelt layout, som fremhæver museets unikke
+                indhold og historiske atmosfære. <br />
+                <br /> Som en ekstra detalje designede vi også en “gylden
+                billet” – et visuelt iøjnefaldende adgangskort, der ikke kun
+                fungerer praktisk under besøget, men også som en fin souvenir,
+                man kan tage med hjem som minde.
               </li>
               <li>
                 <b> Tidslinje:</b> 7 Uger, 2018.
@@ -552,6 +564,7 @@ export const PortfolioCase = (props) => {
         <main>
           <img src={Ban_Skagen} alt="Skagen banner" loading="lazy" />
           <h1>{`- ${props.cases[specificCase].caseName} -`}</h1>
+          <h2>Moderne brochure design</h2>
           <article>
             <span>
               <h3>Info</h3>
@@ -565,8 +578,8 @@ export const PortfolioCase = (props) => {
                 </li>
               </ul>
               <p>
-                <b>{props.cases[specificCase].caseName}</b> - Gamle historier i
-                en moderne pakke. 🖼️
+                <b>{props.cases[specificCase].caseName}</b> - Klassisk kunst i
+                en frisk indpakning 🖼️
               </p>
             </span>
             <section className="Grid Hover">
@@ -590,8 +603,18 @@ export const PortfolioCase = (props) => {
 
             <ul>
               <li>
-                <b> Beskrivelse:</b> En simpel og moderne, men funktionel
-                brochure.
+                <b> Beskrivelse:</b> Et skoleprojekt med fokus på at designe en
+                moderne og visuelt stærk brochure for Skagens Museum. Opgaven
+                bestod i at formidle museets historiske kunst på en ny og
+                engagerende måde – med vægt på typografi, layout og
+                fotografering. Brochuren skulle både være funktionel og
+                æstetisk, og skabe en stærk visuel identitet, der appellerer til
+                både unge og voksne besøgende. <br />
+                <br />
+                Som en ekstra funktion blev der tilføjet en flap med en reklame
+                for museets app, der guider besøgende digitalt gennem
+                udstillingerne – og skaber en bro mellem det historiske indhold
+                og den digitale oplevelse.
               </li>
               <li>
                 <b> Tidslinje:</b> 7 Uger, 2018.
@@ -667,6 +690,7 @@ export const PortfolioCase = (props) => {
         <main>
           <img src={Ban_Hjerte} alt="Hjerte foreningen banner" loading="lazy" />
           <h1>{`- ${props.cases[specificCase].caseName} - `}</h1>
+          <h2>reklamekampagne</h2>
           <article>
             <span>
               <h3>Info</h3>
@@ -678,7 +702,7 @@ export const PortfolioCase = (props) => {
               </ul>
               <p>
                 <b>{props.cases[specificCase].caseName}</b> - Hjælper mænd med
-                at se, seriøsiteten i et større billede. ❤️
+                at se, seriøsiteten i et større billede ❤️
               </p>
             </span>
             <section className="Grid Hover">
@@ -702,14 +726,16 @@ export const PortfolioCase = (props) => {
 
             <ul>
               <li>
-                <b> Beskrivelse:</b> En opgave, hvor jeg fik mulighed for at
-                udarbejde en reklamekampagne for Hjerteforeningen. Jeg
-                besluttede at skabe en række busreklamer, der sætter fokus på
-                mænd, som har udfordringer med at tage vare på sig selv. I
-                stedet for at negligere deres eget helbred, foreslår kampagnen,
-                at de bør tænke på deres familie. Dette budskab formidles gennem
-                "photobashing" og nogle slagkraftige overskrifter, hvor vi ser
-                børn, der savner deres fædre.
+                <b> Beskrivelse:</b> Et projekt, hvor jeg udviklede en
+                reklamekampagne for Hjerteforeningen med fokus på at engagere
+                mænd i sundhedstemaer. <br />
+                <br /> Jeg designede både en busreklame og en tilhørende annonce
+                til sociale medier, som appellerer følelsesmæssigt ved at vise
+                konsekvenserne af at nedprioritere egen sundhed. I stedet for at
+                fokusere på sygdommen i sig selv, kommunikerer kampagnen værdien
+                af at tage vare på sig selv – for familiens skyld. Budskabet
+                blev understøttet visuelt gennem “photobashing” og stærke,
+                direkte overskrifter, der rammer emotionelt.
               </li>
               <li>
                 <b> Tidslinje:</b> 2 dage, 2020.
@@ -795,6 +821,7 @@ export const PortfolioCase = (props) => {
             loading="lazy"
           />
           <h1>{`- ${props.cases[specificCase].caseName} - `}</h1>
+          <h2>visuel rebranding</h2>
           <article>
             <span>
               <h3>Info</h3>
@@ -927,6 +954,7 @@ export const PortfolioCase = (props) => {
             loading="lazy"
           />
           <h1>{`- ${props.cases[specificCase].caseName} - `}</h1>
+          <h2>sekundær portefølje</h2>
           <article>
             <span>
               <h3>Info</h3>
@@ -973,7 +1001,16 @@ export const PortfolioCase = (props) => {
 
             <ul>
               <li>
-                <b> Beskrivelse:</b> Patiaworkshop er en portefølje designet til mine grafikprojekter for YouTubere og streamere. Det er en "Mobil-First" hjemmeside, da 80% af internetbrugerne anvender deres mobiltelefoner til at gå på internettet.
+                <b> Beskrivelse:</b> PatiaWorkshop.com er min personlig
+                portfolio designet til at fremvise mine grafiske projekter fra
+                mine tidliger YouTuber og streamere. Hjemmesiden er udviklet med
+                et stærkt fokus på “Mobile-First”-principper, da størstedelen af
+                brugerne i dag tilgår indhold via deres mobiltelefoner. <br />
+                <br /> Siden præsenterer mine ydelser – som logoer, overlays og
+                stream-grafik – i et brugervenligt, responsivt design, kodet fra
+                bunden i React, HTML og SCSS. Målet var at skabe en digital
+                platform, der er både teknisk velfunderet og visuelt
+                karakteristisk for mit kreative univers.
               </li>
               <li>
                 <b> Tidslinje:</b> 2 måneder, 2023.
@@ -1059,6 +1096,7 @@ export const PortfolioCase = (props) => {
         <main>
           <img src={Ban_Arturs} alt="Arturs Pirazkov banner" loading="lazy" />
           <h1>{`- ${props.cases[specificCase].caseName} - `}</h1>
+          <h2>fotograf portfolio</h2>
           <article>
             <span>
               <h3>Info</h3>
@@ -1104,8 +1142,17 @@ export const PortfolioCase = (props) => {
             </section>
 
             <ul>
-            <li>
-                <b> Beskrivelse:</b> En simpel "One Page" hjemmeside for en fotograf, komplet med et logo.
+              <li>
+                <b> Beskrivelse:</b> Et komplet “One Page” website designet for
+                fotografen Arturs Pirazkov – med fokus på at præsentere hans
+                billeder på en enkel, æstetisk og brugervenlig måde. Projektet
+                omfattede både udvikling af visuel identitet, logo og en moderne
+                hjemmeside, der fungerer optimalt på både desktop og mobil. <br /><br /> Den
+                visuelle stil og farvepalette er inspireret af nordlys, som er
+                Arturs’ fotografiske specialitet. Det skaber en stærk rød tråd
+                mellem hans billedunivers og den digitale præsentation. Hele
+                løsningen er udarbejdet i tæt samarbejde med kunden for at sikre
+                en personlig og autentisk formidling af hans arbejde.
               </li>
               <li>
                 <b> Tidslinje:</b> 3 måneder, 2024.

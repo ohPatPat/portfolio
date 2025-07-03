@@ -9,12 +9,42 @@ import LinkedIn from "../assets/img/icons/Icons_Linkedin.svg";
 import GitHub from "../assets/img/icons/Icons_GitHub.svg";
 import HandPoint from "../assets/img/deco/ArrowHandSmall.svg";
 
-
-let skills = ["PHOTOSHOP", "ILLUSTRATOR", "INDESIGN", "XD", "lightroom", "bridge", "BILLEDBEHANDLING", "TYPOGRAFI", "LAYOUT", "VECTOR", "EMBALLAGEDESIGN", "HTML5", "SASS", "JAVASCRIPT", "REACT", "npm", "seo", "GITHUB", "ChatGPT", "SCRUM", "WORDPRESS", "POSTMAN", "CMS", "STRAPI", "PWA", "MYSQL", "VSCODE", "BRACKETS", "DREAMWEAVER", "WINDOWS", "MAC"];
+let skills = [
+  "PHOTOSHOP",
+  "ILLUSTRATOR",
+  "INDESIGN",
+  "XD",
+  "lightroom",
+  "bridge",
+  "BILLEDBEHANDLING",
+  "TYPOGRAFI",
+  "LAYOUT",
+  "VECTOR",
+  "EMBALLAGEDESIGN",
+  "grafisk tekniker",
+  "HTML5",
+  "SASS",
+  "JAVASCRIPT",
+  "REACT",
+  "npm",
+  "seo",
+  "GITHUB",
+  "ChatGPT",
+  "SCRUM",
+  "WORDPRESS",
+  "POSTMAN",
+  "CMS",
+  "STRAPI",
+  "PWA",
+  "MYSQL",
+  "VSCODE",
+  "BRACKETS",
+  "DREAMWEAVER",
+  "WINDOWS",
+  "MAC",
+];
 
 export const About = (props) => {
-
-
   const currentTime = new Date().getHours();
 
   const MorningTime = currentTime < 12;
@@ -44,8 +74,9 @@ export const About = (props) => {
               </span>
             </h2>
             <hr
-              className={` ${MorningTime ? "MorningTime" : "false"} ${DayTime ? "DayTime" : "false"
-                } ${EveningTime ? "EveningTime" : "false"}`}
+              className={` ${MorningTime ? "MorningTime" : "false"} ${
+                DayTime ? "DayTime" : "false"
+              } ${EveningTime ? "EveningTime" : "false"}`}
             />
             <p>
               Mit navn er Patrik <span id="WaveHand">✌️</span>
@@ -65,9 +96,11 @@ export const About = (props) => {
               enhver team.
             </p>
             <p>
-              Jeg er uddanet mediegrafiker og webudvikler på Techcollege Aalborg { }
-              <i>(6 år i alt)</i>, hvor jeg forfinerede mine færdigheder i grafiske
-              programmer fx. som Adobe Photoshop, Indesign og { } <i>(min yndlings)</i> { }
+              Jeg er uddanet mediegrafiker og webudvikler på Techcollege Aalborg{" "}
+              {}
+              <i>(6 år i alt)</i>, hvor jeg forfinerede mine færdigheder i
+              grafiske programmer fx. som Adobe Photoshop, Indesign og {}{" "}
+              <i>(min yndlings)</i> {}
               Adobe Illustrator. Har også opnåed en grundig forståelse af
               designprincipper, farveteori og typografi. Under mit ophold på
               Techcollege fik jeg grundigt kendskab til en bred vifte af design
@@ -126,6 +159,30 @@ export const About = (props) => {
               </ul>
             </div>
             <div>
+              <h2>ERHVERVSERFARING</h2>
+              <hr />
+              <ul className="NoFlex">
+                <li>
+                  <span className="Small">2024 - 2025</span> <br />
+                  <span className="Bold">
+                    Grafiker og Grafisk tekniker
+                  </span>{" "}
+                  <br /> Hos AA-Skilte A/S
+                </li>
+                <li>
+                  <span className="Small">2021 - 2024</span> <br />
+                  <span className="Bold">Freelancer</span> <br />
+                  Private opgaver
+                </li>
+                <li>
+                  <span className="Small">2023</span> <br />
+                  <span className="Bold">Webudvikler Timelærer</span>
+                  <br />
+                  Hos Techcollege Aalborg
+                </li>
+              </ul>
+            </div>
+            {/* <div>
               <h2>Uddannelser</h2>
               <hr />
               <ul className="NoFlex">
@@ -146,15 +203,31 @@ export const About = (props) => {
                   TECHCOLLEGE Aalborg
                 </li>
               </ul>
-            </div>
+            </div> */}
             <div>
               <h2>platformer</h2>
               <hr />
               <ul className="SocialLinks">
-                <li><a href="https://www.linkedin.com/in/ohpatrikdahl" target="_blank" rel="noopener noreferrer"><img src={LinkedIn} alt="LinkedIn Logo" /></a></li>
-                <li><a href="https://github.com/ohPatPat" target="_blank" rel="noopener noreferrer"><img src={GitHub} alt="GitHub Logo" /></a></li>
-                <li>             
-                   <img src={HandPoint} alt="" />
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/ohpatrikdahl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={LinkedIn} alt="LinkedIn Logo" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/ohPatPat"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={GitHub} alt="GitHub Logo" />
+                  </a>
+                </li>
+                <li>
+                  <img src={HandPoint} alt="" />
                 </li>
               </ul>
             </div>
