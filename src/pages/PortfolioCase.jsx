@@ -327,11 +327,16 @@ export const PortfolioCase = (props) => {
 
             <ul>
               <li>
-                <b> Beskrivelse:</b> Et fiktivt svendeprøveprojekt, som jeg har
-                designet og udviklet helt fra bunden. Inspirationen hentede jeg
-                fra den måde, de flereste energidrikke er typisk markedsføret
-                til mænd. Derfor valgte jeg at gå i en modsat retning og tilføge
-                mere personligheder.
+                <b> Beskrivelse:</b> Et fiktivt projekt til mit svendeprøve, som jeg har
+                designet og udviklet helt fra bunden. <br /> <br /> Inspirationen kom fra den
+                måde, de fleste energidrikke typisk er markedsført til mænd –
+                derfor valgte jeg at gå i en helt anden retning og skabe et
+                brand med mere personlighed og karakter. Designet er en moderne
+                fortolkning af de klassiske østeuropæiske matroska-dukker, som
+                med deres lag symboliserer kompleksitet, identitet og
+                overraskelse. <br /><br /> Navnet Baba Energy er et ordspil, der både
+                henviser til kvindekraft og den ikoniske babushka – en hyldest
+                til styrke, kultur og energi i ét.
               </li>
               <li>
                 <b> Tidslinje:</b> 4 Måneder, 2020.
@@ -1147,12 +1152,14 @@ export const PortfolioCase = (props) => {
                 fotografen Arturs Pirazkov – med fokus på at præsentere hans
                 billeder på en enkel, æstetisk og brugervenlig måde. Projektet
                 omfattede både udvikling af visuel identitet, logo og en moderne
-                hjemmeside, der fungerer optimalt på både desktop og mobil. <br /><br /> Den
-                visuelle stil og farvepalette er inspireret af nordlys, som er
-                Arturs’ fotografiske specialitet. Det skaber en stærk rød tråd
-                mellem hans billedunivers og den digitale præsentation. Hele
-                løsningen er udarbejdet i tæt samarbejde med kunden for at sikre
-                en personlig og autentisk formidling af hans arbejde.
+                hjemmeside, der fungerer optimalt på både desktop og mobil.{" "}
+                <br />
+                <br /> Den visuelle stil og farvepalette er inspireret af
+                nordlys, som er Arturs’ fotografiske specialitet. Det skaber en
+                stærk rød tråd mellem hans billedunivers og den digitale
+                præsentation. Hele løsningen er udarbejdet i tæt samarbejde med
+                kunden for at sikre en personlig og autentisk formidling af hans
+                arbejde.
               </li>
               <li>
                 <b> Tidslinje:</b> 3 måneder, 2024.
