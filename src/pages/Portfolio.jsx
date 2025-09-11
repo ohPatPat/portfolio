@@ -8,6 +8,7 @@ import Ban_Hjerte from "../assets/img/products/Hjerte/Banners_Hjerte.webp";
 import Ban_SundhedsSupport from "../assets/img/products/SundhedsSupport/Banners_SundhedsSupport.webp";
 import Ban_PatiaWorkshop from "../assets/img/products/PatiaWorkshop/Banners_PatiaWorkshop.webp";
 import Ban_Arturs from "../assets/img/products/Arturs/Banners_Arturs.webp";
+import Ban_FMCTrade from "../assets/img/products/FMCTrade/Banners_FMCTrade.webp";
 
 
 export const Portfolio = (props) => {
@@ -44,6 +45,10 @@ export const Portfolio = (props) => {
 
         <NavLink to={`${props.cases[6].url}`}>
         <img src={Ban_Arturs} alt="Arturs Pirazkov banner" loading="lazy"/>
+        </NavLink>
+
+        <NavLink to={`${props.cases[7].url}`}>
+        <img src={Ban_FMCTrade} alt="FMC-Trade banner" loading="lazy"/>
         </NavLink>
 
 

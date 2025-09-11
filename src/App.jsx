@@ -54,6 +54,10 @@ let PortfolioInfo = [
     caseName: "ArtursPirazkov.dk",
     url: "ArtursPirazkov",
   },
+    {
+    caseName: "FMC-Trade.dk",
+    url: "FMC-TradeApS",
+  },
 ];
 
 function App() {

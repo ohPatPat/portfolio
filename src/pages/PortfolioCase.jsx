@@ -8,6 +8,7 @@ import wordpress from "../assets/img/icons/Icons_WordPress.svg";
 import Canva from "../assets/img/icons/Icons_Canva.svg";
 import Vscode from "../assets/img/icons/Icons_Vscode.svg";
 import Camera from "../assets/img/icons/Icons_Camera.svg";
+import XD from "../assets/img/icons/Icons_XD.svg";
 
 // BabaEnergy pics
 import Ban_Baba from "../assets/img/products/BabaEnergy/Banners_BabaEnergy.webp";
@@ -110,6 +111,15 @@ import Arturs_PhoneMockup2 from "../assets/img/products/Arturs/Arturs_PhoneMocku
 import Arturs_Logo from "../assets/img/products/Arturs/Logo.webp";
 import Arturs_Workboard from "../assets/img/products/Arturs/Workboard.webp";
 
+//FMC-Trade
+import Ban_FMCTrade from "../assets/img/products/FMCTrade/Banners_FMCTrade.webp";
+import FMC_DesktopMockup from "../assets/img/products/FMCTrade/FMC_DesktopMockup.webp";
+import FMC_DesktopMockup2 from "../assets/img/products/FMCTrade/FMC_DesktopMockup2.webp";
+
+import FMC_PhoneMockup from "../assets/img/products/FMCTrade/FMC_PhoneMockup.webp";
+import FMC_PhoneMockup2 from "../assets/img/products/FMCTrade/FMC_PhoneMockup2.webp";
+import FMC_Logo from "../assets/img/products/FMCTrade/FMC_Logo.webp";
+
 export const PortfolioCase = (props) => {
   let [specificCase, setspecificCase] = useState(0);
   const [imageSrc, setImageSrc] = useState("");
@@ -152,6 +162,9 @@ export const PortfolioCase = (props) => {
         break;
       case "/portfolio/ArtursPirazkov":
         setspecificCase(6);
+        break;
+      case "/portfolio/FMC-TradeApS":
+        setspecificCase(7);
         break;
 
       default:
@@ -327,16 +340,17 @@ export const PortfolioCase = (props) => {
 
             <ul>
               <li>
-                <b> Beskrivelse:</b> Et fiktivt projekt til mit svendeprøve, som jeg har
-                designet og udviklet helt fra bunden. <br /> <br /> Inspirationen kom fra den
-                måde, de fleste energidrikke typisk er markedsført til mænd –
-                derfor valgte jeg at gå i en helt anden retning og skabe et
-                brand med mere personlighed og karakter. Designet er en moderne
-                fortolkning af de klassiske østeuropæiske matroska-dukker, som
-                med deres lag symboliserer kompleksitet, identitet og
-                overraskelse. <br /><br /> Navnet Baba Energy er et ordspil, der både
-                henviser til kvindekraft og den ikoniske babushka – en hyldest
-                til styrke, kultur og energi i ét.
+                <b> Beskrivelse:</b> Et fiktivt projekt til mit svendeprøve, som
+                jeg har designet og udviklet helt fra bunden. <br /> <br />{" "}
+                Inspirationen kom fra den måde, de fleste energidrikke typisk er
+                markedsført til mænd – derfor valgte jeg at gå i en helt anden
+                retning og skabe et brand med mere personlighed og karakter.
+                Designet er en moderne fortolkning af de klassiske østeuropæiske
+                matroska-dukker, som med deres lag symboliserer kompleksitet,
+                identitet og overraskelse. <br />
+                <br /> Navnet Baba Energy er et ordspil, der både henviser til
+                kvindekraft og den ikoniske babushka – en hyldest til styrke,
+                kultur og energi i ét.
               </li>
               <li>
                 <b> Tidslinje:</b> 4 Måneder, 2020.
@@ -345,7 +359,7 @@ export const PortfolioCase = (props) => {
                 <b>Kunde:</b> Opdigtet projekt til min Svendeprøve.
               </li>
               <li>
-                <b>Udfordringer:</b> Konceptudvikling, Illostration, Marketing,
+                <b>opgaver:</b> Konceptudvikling, Illostration, Marketing,
                 Branding, Karakterdesign, Logo Design, Typografi, Layout,
                 Emballagedesign, Dåse Design, Deadline.
               </li>
@@ -509,7 +523,7 @@ export const PortfolioCase = (props) => {
                 Oplevelsescenter i Aalborg.
               </li>
               <li>
-                <b>Udfordringer:</b> Konceptudvikling, Fotografering,
+                <b>opgaver:</b> Konceptudvikling, Fotografering,
                 Billedredigering, Marketing, Branding, Logo Design, Typografi,
                 Layout, Folder Design, Deadline.
               </li>
@@ -628,7 +642,7 @@ export const PortfolioCase = (props) => {
                 <b>Kunde:</b> Skole projekt - Samarbejde med Skagens Museum.
               </li>
               <li>
-                <b>Udfordringer:</b> Fotografering, Typografi, Layout, Printe,
+                <b>opgaver:</b> Fotografering, Typografi, Layout, Printe,
                 Deadline.
               </li>
             </ul>
@@ -750,8 +764,8 @@ export const PortfolioCase = (props) => {
                 Hjerteforeningen.
               </li>
               <li>
-                <b>Udfordringer:</b> Konceptudvikling, Marketing,
-                Billedbehandling, Typografi, Layout, Deadline.
+                <b>opgaver:</b> Konceptudvikling, Marketing, Billedbehandling,
+                Typografi, Layout, Deadline.
               </li>
             </ul>
             <span>
@@ -894,7 +908,7 @@ export const PortfolioCase = (props) => {
                 <b>Kunde:</b> Arbejdspraktik hos SundhedSupport.
               </li>
               <li>
-                <b>Udfordringer:</b> Research, Rebranding, Marketing, Typografi,
+                <b>opgaver:</b> Research, Rebranding, Marketing, Typografi,
                 Layout, SoMe, kodning, Deadline.
               </li>
             </ul>
@@ -1024,7 +1038,7 @@ export const PortfolioCase = (props) => {
                 <b>Kunde:</b> Personlig projekt.
               </li>
               <li>
-                <b>Udfordringer:</b> Kodning - React, Html, Scss.
+                <b>opgaver:</b> Kodning - React, Html, Scss.
               </li>
             </ul>
             <span>
@@ -1168,8 +1182,8 @@ export const PortfolioCase = (props) => {
                 <b>Kunde:</b> Arturs Pirazkov.
               </li>
               <li>
-                <b>Udfordringer:</b> Kundekontakt - Branding - Logo Design -
-                Layout - Kodning.
+                <b>opgaver:</b> Kundekontakt - Branding - Logo Design - Layout -
+                Kodning.
               </li>
             </ul>
             <span>
@@ -1218,6 +1232,126 @@ export const PortfolioCase = (props) => {
                     alt={Arturs_Workboard}
                     loading="lazy"
                     onClick={() => handleClickW(Arturs_Workboard)}
+                  />
+                </section>
+              </span>
+            </span>
+          </article>
+        </main>
+      ) : null}
+      {specificCase === 7 ? (
+        <main>
+          <img src={Ban_FMCTrade} alt="FMC-Trade banner" loading="lazy" />
+          <h1>{`- ${props.cases[specificCase].caseName} - `}</h1>
+          <h2>Fuld visuel rebranding</h2>
+          <article>
+            <span>
+              <h3>Info</h3>
+              <hr />
+              <ul className="Apps">
+                <li>
+                  <img src={wordpress} alt="wordpress Logo" loading="lazy" />
+                </li>
+                <li>
+                  <img src={XD} alt="XD Logo" loading="lazy" />
+                </li>
+                <li>
+                  <img src={Photoshop} alt="Photoshop Logo" loading="lazy" />
+                </li>
+                <li>
+                  <img
+                    src={Illustrator}
+                    alt="Illustrator Logo"
+                    loading="lazy"
+                  />
+                </li>
+                <li>
+                  <img src={Indesign} alt="Indesign Logo" loading="lazy" />
+                </li>
+              </ul>
+              <p>
+                <b>{props.cases[specificCase].caseName}</b> - Den "blå tråd"
+                gennem transparent design og læsevenligt layout 📈
+              </p>
+            </span>
+            <section className="Grid Hover">
+              <div>
+                <a href="https://fmc-trade.dk" target="_blank" rel="noreferrer">
+                  <img
+                    className="MediumSize NotDisapear"
+                    src={FMC_DesktopMockup2}
+                    alt={FMC_DesktopMockup2}
+                    loading="lazy"
+                  />
+                  <img
+                    className="MediumSize Disapear"
+                    src={FMC_DesktopMockup}
+                    alt={FMC_DesktopMockup}
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+            </section>
+
+            <ul>
+              <li>
+                <b> Beskrivelse:</b> Under min praktik hos FMC-Trade ApS fik jeg
+                mulighed for at arbejde med virksomhedens digitale identitet og
+                online tilstedeværelse. Jeg overtog et tidligere udarbejdet
+                website fra en mindre erfaren praktikant, som trængte til en
+                gennemgribende opdatering. <br /> <br /> Jeg redesignede hele
+                FMC-Trades designsprog og løftede hjemmesiden fra at være en
+                "wall of text" til et mere brugervenligt, transparent og visuelt
+                indbydende univers. Resultatet blev en klarere "blå tråd" på
+                tværs af alle FMC-Trades digitale og visuelle aktiver. <br />{" "}
+                <br /> Ud over hjemmesiden udviklede jeg også virksomhedens nye
+                logo, farvepalette samt et designkoncept til visitkort – alt
+                sammen med fokus på at skabe en stærkere og mere genkendelig
+                visuel identitet.
+              </li>
+              <li>
+                <b> Tidslinje:</b> 1 måned, 2025.
+              </li>
+              <li>
+                <b>Kunde:</b> FMC-Trade ApS.
+              </li>
+              <li>
+                <b>opgaver:</b> Konceptudvikling/Rebranding - Hjemmeside Design
+                med WordPress og kodning - Tekstforfatning - Logo Design -
+                Visitkort Design.
+              </li>
+            </ul>
+            <span>
+              <h4>Mobil</h4>
+              <hr />
+              <span>
+                <section className="Grid Grid2">
+                  <img
+                    src={FMC_PhoneMockup}
+                    alt={FMC_PhoneMockup}
+                    loading="lazy"
+                    onClick={() => handleClickW(FMC_PhoneMockup)}
+                  />
+                  <img
+                    src={FMC_PhoneMockup2}
+                    alt={FMC_PhoneMockup2}
+                    loading="lazy"
+                    onClick={() => handleClickW(FMC_PhoneMockup2)}
+                  />
+                </section>
+              </span>
+            </span>
+
+            <span>
+              <h4>Logo & Visitkort</h4>
+              <hr />
+              <span>
+                <section className="Grid">
+                  <img
+                    src={FMC_Logo}
+                    alt={FMC_Logo}
+                    loading="lazy"
+                    onClick={() => handleClickW(FMC_Logo)}
                   />
                 </section>
               </span>
