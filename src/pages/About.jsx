@@ -82,10 +82,10 @@ export const About = (props) => {
               Mit navn er Patrik <span id="WaveHand">✌️</span>
             </p>
             <p>
-              Jeg er en ung uddannet grafiker og frontend-udvikler. Jeg har en
+              Jeg er en uddannet grafiker og frontend-udvikler. Jeg har en
               dyb passion for at skabe visuelt imponerende og brugervenlige
               designs, samt en stærk baggrund i webudvikling, der giver mig
-              mulighed for at bringe mange af disse designs til live.
+              mulighed for at bringe mange af disse designs til livs.
             </p>
             <p>
               Jeg er en detaljeorienteret og kreativ person med en stærk
@@ -98,7 +98,7 @@ export const About = (props) => {
             <p>
               Jeg er uddanet mediegrafiker og webudvikler på Techcollege Aalborg{" "}
               {}
-              <i>(6 år i alt)</i>, hvor jeg forfinerede mine færdigheder i
+              <i>(6 år i alt)</i>, hvor jeg forfinede mine færdigheder i
               grafiske programmer fx. som Adobe Photoshop, Indesign og {}{" "}
               <i>(min yndlings)</i> {}
               Adobe Illustrator. Har også opnåed en grundig forståelse af

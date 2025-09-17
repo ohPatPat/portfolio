@@ -151,7 +151,7 @@ export const PortfolioCase = (props) => {
       case "/portfolio/Skagens_Museum":
         setspecificCase(2);
         break;
-      case "/portfolio/Hjerte_Foreningen":
+      case "/portfolio/Hjerteforeningen":
         setspecificCase(3);
         break;
       case "/portfolio/SundhedsSupport":
@@ -264,11 +264,12 @@ export const PortfolioCase = (props) => {
       {specificCase === 0 ? (
         <main>
           <img src={Ban_Baba} alt="Baba Energy banner" loading="lazy" />
+          <h2>Energidriksmærke koncept</h2>
           <h1>{`- ${props.cases[specificCase].caseName} -`}</h1>
-          <h2>mediegrafiker svendestykke</h2>
+          <h3>mediegrafiker svendestykke</h3>
           <article>
             <span>
-              <h3>Info</h3>
+              <h4>Info</h4>
               <hr />
               <ul className="Apps">
                 <li>
@@ -285,7 +286,7 @@ export const PortfolioCase = (props) => {
               <p>
                 <b>{props.cases[specificCase].caseName}</b> - Østeuropæisk
                 inspireret energidriksmærke, der prioriterer branding og
-                promovering af femininitet/feminisme👧
+                promovering af femininitet/feminisme👩🏻
               </p>
             </span>
 
@@ -449,11 +450,12 @@ export const PortfolioCase = (props) => {
       {specificCase === 1 ? (
         <main>
           <img src={Ban_Spring} alt="Spring banner" loading="lazy" />
+          <h2>Eventyrligt Folder & Billet koncept</h2>
           <h1>{`- ${props.cases[specificCase].caseName} -`}</h1>
-          <h2>Maritimt oplevelsescenter</h2>
+          <h3>Maritimt oplevelsescenter</h3>
           <article>
             <span>
-              <h3>Info</h3>
+              <h4>Info</h4>
               <hr />
               <ul className="Apps">
                 <li>
@@ -582,11 +584,12 @@ export const PortfolioCase = (props) => {
       {specificCase === 2 ? (
         <main>
           <img src={Ban_Skagen} alt="Skagen banner" loading="lazy" />
-          <h1>{`- ${props.cases[specificCase].caseName} -`}</h1>
           <h2>Moderne brochure design</h2>
+          <h1>{`- ${props.cases[specificCase].caseName} -`}</h1>
+          <h3>Kunst museum</h3>
           <article>
             <span>
-              <h3>Info</h3>
+              <h4>Info</h4>
               <hr />
               <ul className="Apps">
                 <li>
@@ -708,11 +711,12 @@ export const PortfolioCase = (props) => {
       {specificCase === 3 ? (
         <main>
           <img src={Ban_Hjerte} alt="Hjerte foreningen banner" loading="lazy" />
+          <h2>emotionel reklamekampagne</h2>
           <h1>{`- ${props.cases[specificCase].caseName} - `}</h1>
-          <h2>reklamekampagne</h2>
+          <h3>forening</h3>
           <article>
             <span>
-              <h3>Info</h3>
+              <h4>Info</h4>
               <hr />
               <ul className="Apps">
                 <li>
@@ -839,11 +843,12 @@ export const PortfolioCase = (props) => {
             alt="SundhedsSupport banner"
             loading="lazy"
           />
+          <h2>Fuld visuel rebranding</h2>
           <h1>{`- ${props.cases[specificCase].caseName} - `}</h1>
-          <h2>visuel rebranding</h2>
+          <h3>Akupunktur og kostvejleder</h3>
           <article>
             <span>
-              <h3>Info</h3>
+              <h4>Info</h4>
               <hr />
               <ul className="Apps">
                 <li>
@@ -972,11 +977,12 @@ export const PortfolioCase = (props) => {
             alt="Patia Workshop banner"
             loading="lazy"
           />
+          <h2>Udvikling af Hjemmeside</h2>
           <h1>{`- ${props.cases[specificCase].caseName} - `}</h1>
-          <h2>sekundær portefølje</h2>
+          <h3>sekundær portefølje</h3>
           <article>
             <span>
-              <h3>Info</h3>
+              <h4>Info</h4>
               <hr />
               <ul className="Apps">
                 <li>
@@ -1114,11 +1120,12 @@ export const PortfolioCase = (props) => {
       {specificCase === 6 ? (
         <main>
           <img src={Ban_Arturs} alt="Arturs Pirazkov banner" loading="lazy" />
+          <h2>Udvikling af Hjemmeside & Brand</h2>
           <h1>{`- ${props.cases[specificCase].caseName} - `}</h1>
-          <h2>fotograf portfolio</h2>
+          <h3>Naturefotograf</h3>
           <article>
             <span>
-              <h3>Info</h3>
+              <h4>Info</h4>
               <hr />
               <ul className="Apps">
                 <li>
@@ -1242,11 +1249,12 @@ export const PortfolioCase = (props) => {
       {specificCase === 7 ? (
         <main>
           <img src={Ban_FMCTrade} alt="FMC-Trade banner" loading="lazy" />
+          <h2>Redesign af Hjemmeside & Brand</h2>
           <h1>{`- ${props.cases[specificCase].caseName} - `}</h1>
-          <h2>Fuld visuel rebranding</h2>
+          <h3>Opkøb af konkursboer og restpartier</h3>
           <article>
             <span>
-              <h3>Info</h3>
+              <h4>Info</h4>
               <hr />
               <ul className="Apps">
                 <li>

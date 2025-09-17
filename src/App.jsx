@@ -39,8 +39,8 @@ let PortfolioInfo = [
     url: "Skagens_Museum",
   },
   {
-    caseName: "Hjerte Foreningen",
-    url: "Hjerte_Foreningen",
+    caseName: "Hjerteforeningen",
+    url: "Hjerteforeningen",
   },
   {
     caseName: "SundhedsSupport",

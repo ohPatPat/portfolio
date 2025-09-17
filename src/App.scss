@@ -646,16 +646,23 @@ header {
 
     h1 {
       font-size: 2vw;
-      padding-top: 2vw;
       text-align: center;
       color: rgba(128, 128, 128, 0.357);
       text-transform: uppercase;
     }
     h2 {
-      font-size: 1vw;
+      font-size: 1.1vw;
+      padding-top: 2vw;
       text-align: center;
       color: rgba(128, 128, 128, 0.357);
       text-transform: uppercase;
+    }
+    h3 {
+      font-size: 0.9vw;
+      text-align: center;
+      color: rgba(128, 128, 128, 0.357);
+      text-transform: uppercase;
+      font-style: italic;
     }
 
     article {
@@ -663,7 +670,6 @@ header {
       display: flex;
       flex-direction: column;
       gap: 2vw;
-      h3,
       h4 {
         text-transform: uppercase;
         font-size: 1vw;
@@ -1937,16 +1943,23 @@ header {
 
       h1 {
         font-size: 7vw;
-        padding-top: 5vw;
         text-align: center;
         color: rgba(128, 128, 128, 0.357);
         text-transform: uppercase;
       }
       h2 {
         font-size: 4vw;
+        padding-top: 5vw;
         text-align: center;
         color: rgba(128, 128, 128, 0.357);
         text-transform: uppercase;
+      }
+      h3 {
+        font-size: 4vw;
+        text-align: center;
+        color: rgba(128, 128, 128, 0.357);
+        text-transform: uppercase;
+        font-style: italic;
       }
 
       article {
@@ -1954,7 +1967,6 @@ header {
         display: flex;
         flex-direction: column;
         gap: 7vw;
-        h3,
         h4 {
           text-transform: uppercase;
           font-size: 4vw;
@@ -2710,7 +2722,6 @@ header {
     }
   }
 
-
   header {
     padding: 2vw 5vw 2vw 5vw;
     z-index: 5;
@@ -3063,16 +3074,23 @@ header {
 
       h1 {
         font-size: 7vw;
-        padding-top: 5vw;
         text-align: center;
         color: rgba(128, 128, 128, 0.357);
         text-transform: uppercase;
       }
       h2 {
         font-size: 4vw;
+        padding-top: 5vw;
         text-align: center;
         color: rgba(128, 128, 128, 0.357);
         text-transform: uppercase;
+      }
+      h3 {
+        font-size: 4vw;
+        text-align: center;
+        color: rgba(128, 128, 128, 0.357);
+        text-transform: uppercase;
+        font-style: italic;
       }
 
       article {
@@ -3080,7 +3098,6 @@ header {
         display: flex;
         flex-direction: column;
         gap: 7vw;
-        h3,
         h4 {
           text-transform: uppercase;
           font-size: 5vw;
